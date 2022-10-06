@@ -25,20 +25,31 @@ header {
 nav {
     background: linear-gradient(180deg, #00966c, #00ce94);
     padding: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.350);
 }
 .three-bars {
-    display: inline-block;
+    font-size: 40px;
 }
 a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
-.menu {
+#menu {
     display: none;
 }
-.right > li {
-    display: inline;
-    float: right;
+.start-page {
+    background-image: url(../img/veterinario.jpg);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+.links {
+    display: none;
+}
+
 
 @media only screen and (min-width:600px) {
     .col-md-1 {width: 8.33%;}
@@ -53,6 +64,63 @@ a {
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
+
+    .three-bars {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    #menu li {
+        display: inline;
+        font-size: 25px;
+    }
+    #menu li:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .start-page {
+        height: 50vh;
+    }
+
+    .login-cadastro {
+        float: right;
+        margin-right: 15px;
+    }
+
+    .links {
+        display: flex;
+    }
+    .box-agenda {
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+        margin-top: -60px;
+    }
+    .box-agenda > img {
+        width: 80%;
+    }
+    .box-sobre {
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+        margin-top: -60px;
+    }
+    .box-sobre > img {
+        width: 80%;
+    }
+    .box-login {
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+        margin-top: -60px;
+    }
+    .box-login > img {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

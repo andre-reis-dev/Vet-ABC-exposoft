@@ -13,16 +13,36 @@
         <img class="col-sm-5" src="assets/img/logo.png" alt="logo da empresa vet abc">
     </header>
     <nav>
-        <span class="material-symbols-outlined three-bars col-sm-2">menu</span>
-        <ul class="menu">
+        <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Quem Somos</a></li>
             <li><a href="#">Agenda</a></li>
-        </ul>
-        <ul class="right">
-            <li>Login</li>
-            <li>Cadastro</li>
+            <li><a class="login-cadastro" href="#">Login</a></li>
+            <li><a class="login-cadastro" href="#">Cadastro</a></li>
         </ul>
     </nav>
+
+    <main>
+        <div class="start-page">
+            
+        </div>
+        <div class="links">
+            <div class="box-agenda col-md-3">
+                <h2>Agenda</h2>
+                <img src="assets/img/agenda.png" alt="">
+            </div>
+            <div class="box-sobre col-sm-3">
+                <h2>Agenda</h2>
+                <img src="assets/img/agenda.png" alt="">
+            </div>
+            <div class="box-login col-sm-3">
+                <h2>Agenda</h2>
+                <img src="assets/img/agenda.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/javascript/toggle_menu.js"></script>
 </body>
 </html>
