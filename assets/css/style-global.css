@@ -22,6 +22,9 @@ header {
     display: flex;
     justify-content: center;
 }
+.page-top {
+    height: 50vh;
+}
 nav {
     background: linear-gradient(180deg, #00966c, #00ce94);
     padding: 10px;
@@ -42,7 +45,7 @@ a {
 }
 .start-page {
     background-image: url(../img/veterinario.jpg);
-    height: 30vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -78,9 +81,11 @@ a {
     #menu li:not(:last-child) {
         margin-right: 15px;
     }
-
+    .page-top {
+        height: 70vh;
+    }
     .start-page {
-        height: 50vh;
+        height: 100%;
     }
 
     .login-cadastro {
@@ -90,36 +95,44 @@ a {
 
     .links {
         display: flex;
+        justify-content: center;
+        margin-top: -60px;
+    }
+    .links > div:not(:last-child) {
+        margin-right: 10%;
+    }
+    .links > div > h2 {
+        margin-bottom: 10px;
     }
     .box-agenda {
         text-align: center;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        margin-top: -60px;
+        padding: 10px;
     }
     .box-agenda > img {
-        width: 80%;
+        width: 70%;
     }
     .box-sobre {
         text-align: center;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        margin-top: -60px;
+        padding: 10px;
     }
     .box-sobre > img {
-        width: 80%;
+        width: 70%;
     }
     .box-login {
         text-align: center;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        margin-top: -60px;
+        padding: 10px;
     }
     .box-login > img {
-        width: 80%;
+        width: 70%;
     }
 }
 
