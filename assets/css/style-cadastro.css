@@ -11,6 +11,10 @@ body{
     background-color: #66c0a7;
 }
 
+.area-logo{
+    background-color: white;
+}
+
 .cadastro{ /*Caixa que contém todos os elementos do cadastro*/
     margin-left: auto; /*DEIXA CENTRALIZADO NO MEIO*/
     margin-right: auto; /*DEIXA CENTRALIZADO NO MEIO*/
@@ -19,13 +23,16 @@ body{
     height: auto; /*ALTURA*/
     border-radius: 10px; /*CURVATURA DA BORDA*/
     border: 2px solid black; /* BORDA */
+    padding-bottom: 3%;
+    padding-top: 2%;
+    margin-top: 10%;
 }
 
 .formulario{ /*Style que configura o formulário*/
     text-align: center;
     font-family: poppins;
     font-size: 20px;
-    padding-top: 8%; /*espaço entre o texto e o top do formulário*/
+    padding-top: 8%; /*espaço entre o texto e o top do formul;ário*/
 }
 
 .resposta{/*Style que configura as caixa que podem ser digitadas*/
@@ -85,6 +92,9 @@ body{
         height: auto; /*ALTURA*/
         border-radius: 10px; /*CURVATURA DA BORDA*/
         border: 2px solid black; /* BORDA */
+        padding-bottom: 3%;
+        padding-top: 2%;
+        margin-top: 5%;
     }
     
 }
