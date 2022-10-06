@@ -41,7 +41,10 @@ a {
     font-weight: bold;
 }
 #menu {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 .start-page {
     background-image: url(../img/veterinario.jpg);
@@ -53,6 +56,21 @@ a {
     display: none;
 }
 
+
+@keyframes menuDown {
+    from {
+        height: 0px;
+    } to {
+        height: 95px;
+    }
+}
+@keyframes menuUp {
+    from {
+        height: 95px;
+    } to {
+        height: 0px;
+    }
+}
 
 @media only screen and (min-width:600px) {
     .col-md-1 {width: 8.33%;}
@@ -72,7 +90,7 @@ a {
         display: none;
     }
     #menu {
-        display: block;
+        height: auto;
     }
     #menu li {
         display: inline;
