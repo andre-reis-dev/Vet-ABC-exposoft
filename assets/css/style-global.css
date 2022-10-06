@@ -41,7 +41,7 @@ a {
     font-weight: bold;
 }
 #menu {
-    height: 0;
+    height: 0px;
     overflow: hidden;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -90,11 +90,12 @@ a {
         display: none;
     }
     #menu {
-        height: auto;
+        display: block;
+        height: 30px;
     }
     #menu li {
         display: inline;
-        font-size: 25px;
+        font-size: 20px;
     }
     #menu li:not(:last-child) {
         margin-right: 15px;
