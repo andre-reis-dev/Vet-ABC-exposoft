@@ -1,14 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Inter+Tight:wght@300 & family= Poppins & display=swap');
+
 
 *{margin:0;
   padding:0;}
 
-{ 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+body{
+    background-color: #F5FFFA;
+}
+.box-andre{
+     height: auto;
+    width: auto;
+    background-color: #e6f5f0;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cor-foto-a{
+    margin-top: -10px;;
+    height: 80px;
+    width:335px;
+    background-color: #66c0a7;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    
+     
+}
+.foto-a{
+    margin-top: -50px;
+    border-radius: 50%;
+    background-size: 40px;
+    width: 100px;
+    height: 100px;
+    margin-left: 120px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+   background-size: 100px;
+    
 }
 
 .col-sm-1 {width: 8.33%;}
@@ -24,40 +55,6 @@
 .col-sm-11 {width: 91.66%;}
 .col-sm-12 {width: 100%;}
 
-header {
-    display: flex;
-    justify-content: center;
-}
-.page-top {
-    height: 50vh;
-}
-nav {
-    background: linear-gradient(180deg, #00966c, #00ce94);
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.350);
-}
-.three-bars {
-    font-size: 40px;
-}
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-#menu {
-    display: none;
-}
-.start-page {
-    background-image: url(../img/veterinario.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.links {
-    display: none;
-}
 
 
 @media only screen and (min-width:600px) {
@@ -74,74 +71,7 @@ a {
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
 
-    .three-bars {
-        display: none;
-    }
-    #menu {
-        display: block;
-    }
-    #menu li {
-        display: inline;
-        font-size: 25px;
-    }
-    #menu li:not(:last-child) {
-        margin-right: 15px;
-    }
-    .page-top {
-        height: 70vh;
-    }
-    .start-page {
-        height: 100%;
-    }
-
-    .login-cadastro {
-        float: right;
-        margin-right: 15px;
-    }
-
-    .links {
-        display: flex;
-        justify-content: center;
-        margin-top: -60px;
-    }
-    .links > div:not(:last-child) {
-        margin-right: 10%;
-    }
-    .links > div > h2 {
-        margin-bottom: 10px;
-    }
-    .box-agenda {
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        padding: 10px;
-    }
-    .box-agenda > img {
-        width: 70%;
-    }
-    .box-sobre {
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        padding: 10px;
-    }
-    .box-sobre > img {
-        width: 70%;
-    }
-    .box-login {
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-        padding: 10px;
-    }
-    .box-login > img {
-        width: 70%;
-    }
-}
-
+    
 @media only screen and (min-width: 1024px) {
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
