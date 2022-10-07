@@ -5,8 +5,8 @@
   padding:0;}
 
 .geral{
-    min-height: 140%;
-    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*config rodapé*/
@@ -50,15 +50,17 @@
 }
 
 .rodape{
-    position: absolute;
-    bottom: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     text-align: center;
     background-color: black;
     color: white;
 }
+
 .logo-abc{
     margin-left: 20px;
-    margin-top: -40px;
+    margin-top: -40px;d
     height: 150px;
     width: 150px;
     float: right;
@@ -80,7 +82,7 @@
     .col-md-12 {width: 100%;}
     
     /*config rodapé*/
-    .logo-alcina{
+.logo-alcina{
     margin-left: 150px;
     margin-top: 8px;
     height: 50px;
@@ -95,12 +97,12 @@
     float: right;
 }
 .info{
-        margin-left: 250px;
+    margin-left: 250px;
     text-align: center;
     }
     /*fim da config */
 }
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
@@ -115,60 +117,61 @@
     .col-lg-12 {width: 100%;}
     
         /*config rodapé*/
-.logo-alcina{
-   margin-left: 150px;
-    margin-top: 8px;
-    height: 80px;
-    width: 80px;
-    float: left;
-}
-.logo-abc{
-   margin-right: 30px;
-    margin-top: -40px;
-    height: 200px;
-    width: 200px;
-    float: right;
-}
-.info{ /*dic das informações*/
-        margin-left: 250px;
-    text-align: center;
-    font-size: 20px;
+    .logo-alcina{
+       margin-left: 150px;
+        margin-top: 8px;
+        height: 80px;
+        width: 80px;
+        float: left;
     }
-.rodape{
-    margin-top: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    height: 100px;
-    
-}
-.r-name{ /*texto*/
-    font-family: Poppins, display;
-    font-size: 15px;
-    bottom: 30;
-    left: 530;
-    text-align: center;
-}
-.r-endereco{/*texto*/
-    font-family: Poppins, display;
-    font-size: 15px;
-    bottom: 20;
-    left: 530;
-    text-align: center;
-}
-.r-email{/*texto*/
-    font-family: Poppins, display;
-    font-size: 15px;
-    bottom: 10;
-    left: 530;
-    text-align: center;
-}
-.r-tel{/*texto*/
-    font-family: Poppins, display;
-    font-size: 15px;
-    bottom: 10;
-    left: 530;
-    text-align: center;
-}
+    .logo-abc{
+       margin-right: 30px;
+        margin-top: -40px;
+        height: 200px;
+        width: 200px;
+        float: right;
+    }
+    .info{ /*dic das informações*/
+            margin-left: 250px;
+        text-align: center;
+        font-size: 20px;
+        }
+
+    .rodape{
+        margin-top: 20px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        height: 100px;    
+    }
+
+    .r-name{ /*texto*/
+        font-family: Poppins, display;
+        font-size: 15px;
+        bottom: 30;
+        left: 530;
+        text-align: center;
+    }
+    .r-endereco{/*texto*/
+        font-family: Poppins, display;
+        font-size: 15px;
+        bottom: 20;
+        left: 530;
+        text-align: center;
+    }
+    .r-email{/*texto*/
+        font-family: Poppins, display;
+        font-size: 15px;
+        bottom: 10;
+        left: 530;
+        text-align: center;
+    }
+    .r-tel{/*texto*/
+        font-family: Poppins, display;
+        font-size: 15px;
+        bottom: 10;
+        left: 530;
+        text-align: center;
+    }
 /* fim da config*/
 }
