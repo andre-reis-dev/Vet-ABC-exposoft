@@ -69,11 +69,11 @@ a {
 .row > img {
     margin-bottom: 10px;
 }
-.row > h2 {
+.row > div > h2 {
     margin-bottom: 10px;
     color: #001610;
 }
-.row > p {
+.row > div > p {
     margin: auto;
     text-align: justify;
 }
@@ -210,11 +210,22 @@ a {
     .links > div:not(:last-child) {
         margin-right: 3%;
     }
-
     .row {
         display: flex;
+        align-items: center;
+    }
+    .row:not(#first-row) {
+        flex-direction: row-reverse;
     }
     #first-row > img {
         margin-top: 0px;
+    }
+    .row > div > h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .row > div > p {
+        text-align: justify;
+        font-size: 1rem;
     }
 }
