@@ -18,6 +18,10 @@
 .col-sm-11 {width: 91.66%;}
 .col-sm-12 {width: 100%;}
 
+h2 {
+    color: black;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -56,6 +60,23 @@ a {
     display: none;
 }
 
+.row {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #bdffd9;
+    color: #001610;
+}
+.row > img {
+    margin-bottom: 10px;
+}
+.row > h2 {
+    margin-bottom: 10px;
+    color: #001610;
+}
+.row > p {
+    margin: auto;
+    text-align: justify;
+}
 
 @keyframes menuDown {
     from {
@@ -120,7 +141,7 @@ a {
     .links > div:not(:last-child) {
         margin-right: 10%;
     }
-    .links > div > h2 {
+    .links > div > a > h2 {
         margin-bottom: 10px;
     }
     .box-agenda {
@@ -130,7 +151,7 @@ a {
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
         padding: 10px;
     }
-    .box-agenda > img {
+    .box-agenda > a > img {
         width: 70%;
     }
     .box-sobre {
@@ -140,7 +161,7 @@ a {
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
         padding: 10px;
     }
-    .box-sobre > img {
+    .box-sobre > a > img {
         width: 70%;
     }
     .box-login {
@@ -150,8 +171,12 @@ a {
         box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
         padding: 10px;
     }
-    .box-login > img {
+    .box-login > a > img {
         width: 70%;
+    }
+    
+    #first-row > img {
+        margin-top: 150px;
     }
 }
 
@@ -168,4 +193,28 @@ a {
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
+
+    .page-top {
+        background-color: #00ce94;
+        height: 90vh;
+    }
+    .start-page {
+        max-height: 91%;
+    }
+
+    .links {
+        margin-top: -200px;
+        justify-content: right;
+        margin-right: 50px;
+    }
+    .links > div:not(:last-child) {
+        margin-right: 3%;
+    }
+
+    .row {
+        display: flex;
+    }
+    #first-row > img {
+        margin-top: 0px;
+    }
 }

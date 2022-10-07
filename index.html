@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/style-global.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
     <title>Vet ABC</title>
 </head>
 <body>
     <header>
-        <img class="col-sm-5 col-md-3 col-lg-2" src="assets/img/logo.png" alt="logo da empresa vet abc">
+        <img class="col-sm-5 col-md-3 col-lg-1" src="assets/img/logo.png" alt="logo da empresa vet abc">
     </header>
     <div class="page-top">
         <nav>
@@ -24,27 +25,57 @@
             </ul>
         
         </nav>
-        <div class="start-page">
+        <div class="start-page col-sm-12 col-md-12 col-lg-8">
         
         </div>
         <div class="links">
-            <div class="box-agenda col-md-2">
-                <h2>Agenda</h2>
-                <img src="assets/img/agenda.png" alt="">
+            <div class="box-agenda col-md-2 col-lg-2">
+                <a href="assets/html/agenda.html">
+                    <h2>Agenda</h2>
+                    <img src="assets/img/agenda.png" alt="">
+                </a>
             </div>
-            <div class="box-sobre col-md-2">
-                <h2>Sobre</h2>
-                <img src="assets/img/grupo-fundo-branco.png" alt="">
+            <div class="box-sobre col-md-2 col-lg-2">
+                <a href="assets/html/quemsomos.html">
+                    <h2>Sobre</h2>
+                    <img src="assets/img/grupo-fundo-branco.png" alt="">
+                </a>
             </div>
-            <div class="box-login col-md-2">
-                <h2>Cadastro</h2>
-                <img src="assets/img/cadastro.png" alt="">
+            <div class="box-login col-md-2 col-lg-2">
+                <a href="assets/html/cadastro.html">
+                    <h2>Cadastro</h2>
+                    <img src="assets/img/cadastro.png" alt="">
+                </a>
             </div>
         </div>
     </div>
-    <div class="row1">
-        <img src="assets/" alt="">
-    </div>
+
+    <main>
+        <div id="first-row" class="row">
+            <img class="col-sm-8 col-md-7 col-lg-4" src="assets/img/pet-buldog.jpg" alt="">
+            <h2 class="col-sm-12 col-md-12 col-lg-8">Lorem Ipsum</h2>
+            <p class="col-sm-12 col-md-10 col-lg-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus aliquam at, excepturi magnam maiores fugiat, rerum tenetur pariatur nesciunt nisi beatae porro provident ducimus omnis aperiam quod itaque nihil.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <img class="col-sm-8 col-md-7 col-lg-4" src="assets/img/gato.jpeg" alt="">
+            <div class="row-content">
+                <h2 class="col-sm-12 col-md-12 col-lg-8">Lorem Ipsum</h2>
+                <p class="col-sm-12 col-md-10 col-lg-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus aliquam at, excepturi magnam maiores fugiat, rerum tenetur pariatur nesciunt nisi beatae porro provident ducimus omnis aperiam quod itaque nihil.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape col-sm-12 col-md-12 col-lg-12">
+        <img src="assets/img/alcina.jpg" class="logo-alcina">
+        <img src="assets/img/logo-abc.png" class="logo-abc">
+        <div class="info">
+          <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
+          <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+          <p class="r-email">secretaria.alcina@gmail.com</p>
+          <p class="r-tel">(11) 4224-0679</p>
+       </div>
+    </footer>
 
     <script src="assets/javascript/toggle_menu.js"></script>
 </body>
