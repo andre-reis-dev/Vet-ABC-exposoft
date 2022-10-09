@@ -7,25 +7,31 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+/* FUNDO DA PÁGINA*/
 body{
     background-color: #F5FFFA;
 }
+
+/* LETRAS DO SITE */
 p{
     font-family: 'poppins' ,display;
 }
 
-.box-andre{
+/* CONFIGURAÇÃO DA CAIXINHA DO ANDRÉ */
+.box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
      height: auto;
     width: auto;
     background-color: #e6f5f0;
     margin-top: 40px;
-    margin-left: auto;
+    margin-left: auto;/* para ficar centralizado */
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
 }
-.cor-foto-a{
+
+.cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     margin-top: -10px;
     height: 80px;
     width:335px;
@@ -34,13 +40,12 @@ p{
     margin-right: auto;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
     border-radius: 0px;
-    
      
 }
-.foto-a{
+.foto-a{ /* é a div redonda que armazena a foto */
     margin-top: -50px;
     border-radius: 50%;
-    background-size: 100%;
+    background-size: 100%; /* define o tamanho que a foto terá dentro da div */
     width: 110px;
     height: 110px;
     margin-left: auto;
@@ -49,39 +54,11 @@ p{
    
     
 }
-.box-barbara{
-    height: auto;
-    width: auto;
-    background-color: #e6f5f0;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    overflow: hidden;
-}
-.cor-foto-b{
-    margin-top: -10px;
-    height: 80px;
-    width:335px;
-    background-color: #66c0a7;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
-    border-radius: 0px;
-}
-.foto-b{
-    margin-top: -50px;
-    border-radius: 50%;
-    background-size: 100%;
-    width: 110px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
 
-.box-camila{
+/* FIM DA CONF */
+
+/* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
+.box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
     height: auto;
     width: auto;
     background-color: #e6f5f0;
@@ -90,9 +67,9 @@ p{
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
 }
-.cor-foto-c{
+.cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     margin-top: -10px;
     height: 80px;
     width:335px;
@@ -102,16 +79,51 @@ p{
     box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
     border-radius: 0px;
 }
-.foto-c{
+.foto-b{/* é a div redonda que armazena a foto */
     margin-top: -50px;
     border-radius: 50%;
-    background-size: 100%;
+    background-size: 100%;/* define o tamanho que a foto terá dentro da div */
     width: 110px;
     height: 110px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
+/* FIM DA CONF */
+
+/* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
+.box-camila{ /* box camila é toda a caixa que será armazenado as informações referentes a camila- a caixa toda */
+    height: auto;
+    width: auto;
+    background-color: #e6f5f0;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+}
+.cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+    margin-top: -10px;
+    height: 80px;
+    width:335px;
+    background-color: #66c0a7;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    border-radius: 0px;
+}
+.foto-c{/* é a div redonda que armazena a foto */
+    margin-top: -50px;
+    border-radius: 50%;
+    background-size: 100%;/* define o tamanho que a foto terá dentro da div */
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+/* FIM DA CONFIG */
 
 .col-sm-1 {width: 8.33%;}
 .col-sm-2 {width: 16.66%;}
@@ -127,8 +139,11 @@ p{
 .col-sm-12 {width: 100%;}
 
 
-
+/* TAMANHO 600 */
 @media only screen and (min-width:600px) {
+    
+    
+    
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -142,8 +157,81 @@ p{
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
 }
-    
+    /* TAMANHO 1024 */
 @media only screen and (min-width: 1024px) {
+    
+    .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
+     height: auto;
+    width: auto;
+    background-color: #e6f5f0;
+    margin-top: 130px;
+    margin-left:40px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+}
+    .cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+  
+    height: 80px;
+    width:335px;
+    margin-top: -10;
+    background-color: #66c0a7;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    border-radius: 0px; /* pra n ficar redondo */
+     
+}
+    /* FIM DA CONF */
+
+/* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
+.box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
+    height: auto;
+    width: auto;
+    background-color: #e6f5f0;
+    margin-left: 500px;
+    margin-top: -255px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
+    z-index: -99px;
+}
+.cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+    height: 80px;
+    width:335px;
+    margin-top: -10;
+    background-color: #66c0a7;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    border-radius: 0px; /* pra n ficar redondo */
+    z-index: -99px;
+}
+    /* FIM DA CONF */
+
+/* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
+.box-camila{ /* box camila é toda a caixa que será armazenado as informações referentes a camila- a caixa toda */
+    height: auto;
+    width: auto;
+    background-color: #e6f5f0;
+    margin-top: -255px;
+    margin-left: 950px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+    z-index: -99;
+}
+.cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+    height: 80px;
+    width:335px;
+    margin-top: -10;
+    background-color: #66c0a7;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    border-radius: 0px; /* pra n ficar redondo */
+    z-index: -99px;
+}
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
