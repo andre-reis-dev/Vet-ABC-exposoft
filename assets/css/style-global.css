@@ -40,16 +40,16 @@ nav {
     font-size: 40px;
     cursor: pointer;
 }
-#three-bars:active ~ #menu {
-    animation-name: menuDown;
-}
 a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-#menu {
-    height: 0px;
+.main-nav-bar {
+    display: none;
+}
+#menu-mobile {
+    display: none;
     overflow: hidden;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -110,6 +110,14 @@ a {
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
+
+    .main-nav-bar {
+        display: block;
+    }
+
+    .nav-menu-mobile {
+        display: none;
+    }
 
     .three-bars {
         display: none;
