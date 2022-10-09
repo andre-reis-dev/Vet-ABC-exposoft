@@ -38,6 +38,10 @@ nav {
 }
 .three-bars {
     font-size: 40px;
+    cursor: pointer;
+}
+#three-bars:active ~ #menu {
+    animation-name: menuDown;
 }
 a {
     text-decoration: none;
