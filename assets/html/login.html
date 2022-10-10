@@ -14,14 +14,24 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
             
-        <nav><!-- Essa nav vai conter o MENU -->
+        <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../../index.html">Home</a></li>
                 <li><a href="#">Quem Somos</a></li>
                 <li><a href="#">Agenda</a></li>
                 <li><a class="login-cadastro" href="#">Login</a></li>
                 <li><a class="login-cadastro" href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-menu-mobile">
+            <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
+            <ul id="menu-mobile">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a class="login-cadastro" href="login.html">Login</a></li>
+                <li><a class="login-cadastro" href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
             
@@ -48,6 +58,7 @@
               <p class="r-tel">(11) 4224-0679</p>
            </div>
         </footer>
-        
+
+        <script src="../javascript/toggle_menu.js"></script>
     </body>
 </html>

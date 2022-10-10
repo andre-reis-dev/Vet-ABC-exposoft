@@ -14,20 +14,27 @@
         <img class="col-sm-5 col-md-3 col-lg-2" src="assets/img/logo.png" alt="logo da empresa vet abc">
     </header>
     <div class="page-top">
-        <nav>
-            <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
+        <nav class="main-nav-bar">
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Quem Somos</a></li>
+                <li><a href="assets/html/quemsomos.html">Quem Somos</a></li>
                 <li><a href="#">Agenda</a></li>
-                <li><a class="login-cadastro" href="#">Login</a></li>
-                <li><a class="login-cadastro" href="#">Cadastro</a></li>
+                <li><a class="login-cadastro" href="assets/html/login.html">Login</a></li>
+                <li><a class="login-cadastro" href="assets/html/cadastro.html">Cadastro</a></li>
             </ul>
         
         </nav>
-        <div class="start-page col-sm-12 col-md-12 col-lg-8">
-        
-        </div>
+        <nav class="nav-menu-mobile">
+            <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
+            <ul id="menu-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/quemsomos.html">Quem Somos</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a class="login-cadastro" href="assets/html/login.html">Login</a></li>
+                <li><a class="login-cadastro" href="assets/html/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+        <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
         <div class="links">
             <div class="box-agenda col-md-2 col-lg-2">
                 <a href="assets/html/agenda.html">
@@ -79,6 +86,6 @@
        </div>
     </footer>
 
-    
+    <script src="assets/javascript/toggle_menu.js"></script>
 </body>
 </html>

@@ -23,8 +23,8 @@ body{
     height: auto; /*ALTURA*/
     border-radius: 10px; /*CURVATURA DA BORDA*/
     border: 2px solid black; /* BORDA */
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 25%;
+    margin-bottom: 25%;
     padding-bottom: 3%;
 }
 
@@ -91,8 +91,8 @@ body{
         height: auto; /*ALTURA*/
         border-radius: 10px; /*CURVATURA DA BORDA*/
         border: 2px solid black; /* BORDA */  
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 25%;
+        margin-bottom: 25%;
         padding-bottom: 2%;
         padding-top: 2%;
     }
@@ -129,8 +129,8 @@ body{
         height: auto; /*ALTURA*/
         border-radius: 10px; /*CURVATURA DA BORDA*/
         border: 2px solid black; /* BORDA */
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 12%;
+        margin-bottom: 12%;
         padding-bottom: 3%;
     }
 }
