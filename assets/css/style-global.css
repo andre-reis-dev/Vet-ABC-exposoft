@@ -23,14 +23,14 @@ h2 {
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    display: flex; /*define o display do elemento como flex, o que habilita diversas configurações compatíveis apenas com display flex*/
+    justify-content: center; /*alinha os elementos dentro de um box com display flex para o centro no eixo x. É uma das configurações exclusivas do display flex.*/
 }
 .page-top {
-    height: 50vh;
+    height: 50vh; /*vh = Viewport Heigth, ou seja, altura da viewport (tela do dispositivo). 50vh = 50% da altura da viewport*/
 }
 nav {
-    background: linear-gradient(180deg, #00966c, #00ce94);
+    background: linear-gradient(180deg, #00966c, #00ce94); /*aplica um gradiente no fundo do elemento. Vale lembrar que essa configuração só é aplicável nas propriedades "background" e "background-image"*/
     padding: 10px;
     color: white;
     font-weight: bold;
@@ -52,13 +52,13 @@ a {
     display: none;
     overflow: hidden;
     animation-duration: .5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; /*faz com que, ao final da animação, a configuração final da animação seja aplicada de forma definitiva ao elemento, evitando que ele volte à sua configuração inicial no final da animação*/
 }
 .start-page {
     background-image: url(../img/veterinario.jpg);
     height: 80%;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: no-repeat; /*impossibilita que a imagem de fundo do elemento se repita por toda a extensão do elemento*/
+    background-size: 100%; /*define que a imagem de fundo ocupara todo o espaço do elemento*/
 }
 .links {
     display: none;
@@ -130,7 +130,7 @@ a {
         display: inline;
         font-size: 20px;
     }
-    #menu li:not(:last-child) {
+    #menu li:not(:last-child) { /*as configurações feitas a seguir serão aplicadas a todas as li's, exceto a última*/
         margin-right: 15px;
     }
     .page-top {
@@ -227,17 +227,17 @@ a {
         align-items: center;
     }
     .row:not(#first-row) {
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; /*diz que a direção do flex será em linha, porém invertendo as posições dos elementos*/
     }
     #first-row > img {
         margin-top: 0px;
     }
     .row > div > h2 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2rem; /*1rem é igual ao tamanho padrão da fonte da raiz(root) do documento, normalmente 16px, portanto 1rem equivale a 16px*/
     }
     .row > div > p {
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1rem; 
     }
 }
