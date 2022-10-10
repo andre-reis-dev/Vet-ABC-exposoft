@@ -190,11 +190,11 @@ p{
     width: auto;
     background-color: #e6f5f0;
     margin-left: 500px;
-    margin-top: -255px;
+    margin-top: -200px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
-    z-index: -99px;
+   
 }
 .cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     height: 80px;
@@ -205,7 +205,7 @@ p{
     margin-right: auto;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
     border-radius: 0px; /* pra n ficar redondo */
-    z-index: -99px;
+    
 }
     /* FIM DA CONF */
 
@@ -214,12 +214,12 @@ p{
     height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: -255px;
+    margin-top: -225px;
     margin-left: 950px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
-    z-index: -99;
+    
 }
 .cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     height: 80px;
@@ -230,7 +230,7 @@ p{
     margin-right: auto;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
     border-radius: 0px; /* pra n ficar redondo */
-    z-index: -99px;
+    
 }
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
