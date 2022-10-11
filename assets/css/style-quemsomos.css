@@ -270,13 +270,9 @@ p{
     }
 
     .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
-        height: auto;
-        width: auto;
-        background-color: #e6f5f0;
-        display: inline-block;
+       background-color: #e6f5f0;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         border-radius: 10px;
-        overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
     }
     
     .cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
@@ -289,30 +285,14 @@ p{
         box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
         border-radius: 0px; /* pra n ficar redondo */ 
         z-index: 2;
-    }
-    .foto-a{ /* é a div redonda que armazena a foto */
-        margin-top: -50px;
-        border-radius: 50%;
-        background-size: 100%; /* define o tamanho que a foto terá dentro da div */
-        width: 110px;
-        height: 110px;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);  
-        z-index: -99;
-    }
-    /* FIM DA CONF */
+    }/* FIM DA CONF */
 
 
     /* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
     .box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
-        height: auto;
-        width: auto;
         background-color: #e6f5f0;
-        display: inline-block;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-        border-radius: 10px;
-        overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */  
+        border-radius: 10px;  
     }
     .cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
         height: 80px;
@@ -329,13 +309,9 @@ p{
 
     /* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
     .box-camila{ /* box camila é toda a caixa que será armazenado as sinformações referentes a camila- a caixa toda */
-        height: auto;
-        width: auto;
         background-color: #e6f5f0;
-        display: inline-block;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         border-radius: 10px;
-        overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
     }
     .cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
         height: 80px;
