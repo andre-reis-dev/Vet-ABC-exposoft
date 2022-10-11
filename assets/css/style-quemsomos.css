@@ -18,24 +18,28 @@ body{
 p{
     font-family: 'poppins' ,display;
 }
+/* div das logos */
+.logos{
+ 
+}
 
 /* CONFIGURAÇÃO DA CAIXINHA DO ANDRÉ */
 .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
-     height: auto;
+    height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: 40px;
-    margin-left: auto;/* para ficar centralizado */
+    margin-top: 30px;
+    margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
-    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+    overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
 }
 
 .cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     margin-top: -10px;
     height: 80px;
-    width:335px;
+    width:100%;
     background-color: #66c0a7;
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +56,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    z-index: -99;
    
     
 }
@@ -63,7 +68,7 @@ p{
     height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
@@ -97,12 +102,12 @@ p{
     height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
-    overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+    overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
 }
 .cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
     margin-top: -10px;
@@ -126,20 +131,6 @@ p{
 }
 /* FIM DA CONFIG */
 
-*{margin:0;
-  padding:0;}
-
-.box-andre{
-     padding: 20px;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    width: 60px;
-    height: 70px;
-}
 
 
 
@@ -163,7 +154,83 @@ p{
 /* TAMANHO 600 */
 @media only screen and (min-width:600px) {
     
-    
+    .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
+        height: auto;
+       width: auto;
+       background-color: #e6f5f0;
+       margin-top: 60px;
+       margin-left:auto; 
+       margin-right: auto;
+       box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+       border-radius: 10px;
+       overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+   }
+       .cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+     
+       height: 80px;
+       width:335px;
+       margin-top: -10;
+       background-color: #66c0a7;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+       border-radius: 0px; /* pra n ficar redondo */
+        
+   }
+       /* FIM DA CONF */
+   
+   
+   /* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
+   .box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
+       height: auto;
+       width: auto;
+       background-color: #e6f5f0;
+       margin-left:auto;
+       margin-right: auto;
+       margin-top: 60px;
+       box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+       border-radius: 10px;
+       overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
+      
+   }
+   .cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+       height: 80px;
+       width:335px;
+       margin-top: -10;
+       background-color: #66c0a7;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+       border-radius: 0px; /* pra n ficar redondo */
+       
+   }
+       /* FIM DA CONF */
+   
+   /* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
+   .box-camila{ /* box camila é toda a caixa que será armazenado as informações referentes a camila- a caixa toda */
+       height: auto;
+       width: auto;
+       background-color: #e6f5f0;
+       margin-top: 60px;
+       margin-left:auto;
+       margin-right: auto;
+       box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+       border-radius: 10px;
+       overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
+       
+   }
+   .cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
+       height: 80px;
+       width:335px;
+       margin-top: -10;
+       background-color: #66c0a7;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+       border-radius: 0px; /* pra n ficar redondo */
+       
+   }
+   
     
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
@@ -178,6 +245,26 @@ p{
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* TAMANHO 1024 */
 @media only screen and (min-width: 1024px) {
     
@@ -185,8 +272,8 @@ p{
      height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: 130px;
-    margin-left:40px; 
+    margin-top: 40px;
+    margin-left:90px; 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
@@ -205,14 +292,15 @@ p{
 }
     /* FIM DA CONF */
 
-<<<<<<< Updated upstream
+
 /* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
 .box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
     height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-left: 500px;
-    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -310px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden;/* nada consegue ultrapassar o tamanho dessa div */
@@ -236,8 +324,8 @@ p{
     height: auto;
     width: auto;
     background-color: #e6f5f0;
-    margin-top: -225px;
-    margin-left: 950px;
+    margin-top: -330px;
+    margin-left: 920px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden; /* nada consegue ultrapassar o tamanho dessa div */
@@ -256,8 +344,7 @@ p{
 }
 
     
-@media only screen and (min-width: 1024px) {
- 
+
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
