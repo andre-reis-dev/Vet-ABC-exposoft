@@ -21,6 +21,7 @@ p{
 /* div das logos */
 
 .logos{
+<<<<<<< Updated upstream
  width: 40px;
  height: 40px;
  
@@ -31,6 +32,10 @@ p{
     padding-bottom: 10px; /* abrira um espaço abaixo do elemento */
 }
 
+=======
+    
+}
+>>>>>>> Stashed changes
 /* CONFIGURAÇÃO DA CAIXINHA DO ANDRÉ */
 .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
     height: auto;

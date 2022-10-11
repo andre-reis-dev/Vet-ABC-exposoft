@@ -1,12 +1,9 @@
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
+    text-align: center;
     padding: 10px;
 }
 form > p {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 form > p > label {
     display: block;
@@ -15,4 +12,5 @@ form > p > label {
 input {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.569);
+    padding: 5px;
 }
