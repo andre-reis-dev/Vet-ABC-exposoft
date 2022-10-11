@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+form > p {
+    margin-bottom: 10px;
+}
+form > p > label {
+    display: block;
+    margin-bottom: 10px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.569);
+}
