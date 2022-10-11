@@ -19,8 +19,16 @@ p{
     font-family: 'poppins' ,display;
 }
 /* div das logos */
+
 .logos{
+ width: 40px;
+ height: 40px;
  
+}
+.guarda-logo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px; /* abrira um espaço abaixo do elemento */
 }
 
 /* CONFIGURAÇÃO DA CAIXINHA DO ANDRÉ */
@@ -267,6 +275,8 @@ p{
     .caixote{
         display: flex; /* flexivel- deixar alinhado */
         justify-content: center; /* centralizar os elementos */
+        margin-top: 3%; /* top e bottom serve par adar um espaço entre as boxs e o rodapé */
+        margin-bottom: 3%;
     }
 
     .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
