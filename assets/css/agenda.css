@@ -5,6 +5,7 @@ table {
 .first-row {
     background-color: #005d43;
     color: white;
+    height: 60px;
 }
 .month-banner {
     display: flex;
@@ -22,7 +23,7 @@ table {
     padding: 10px;
     font-size: 1.5rem;
     cursor: pointer;
-    width: 20%;
+    width: 15%;
 }
 td {
     border: 1px solid rgba(0, 0, 0, 0.674);
@@ -47,12 +48,22 @@ td > .cell-container > span {
     background-color: #005d43;  
     border-radius: 5px;
     margin: 0px 1px 2px 1px;
-    padding: 5px;
+    padding: 4px;
     color: white;
     text-align: center;
     cursor: pointer;
+    min-height: 20px;
+    max-height: 25px;
+    overflow: hidden;
 }
 .event > p {
     font-weight: bold;
     font-size: 0.8rem;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    table{
+        margin: 0;
+    }
 }
