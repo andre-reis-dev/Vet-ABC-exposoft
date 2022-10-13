@@ -62,8 +62,54 @@ td > .cell-container > span {
     word-wrap: break-word;
 }
 
+main {
+    width: 100%;
+    display: flex;
+}
+.event-info {
+    margin: 10px;
+    background-color: #fff;
+    height: fit-content;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.423);
+}
+.event-info > .title {
+    background-color: #005d43;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.event-content {
+    padding: 5px;
+}
+.event-content > div {
+    margin: 10px auto;
+}
+.clock {
+    vertical-align: bottom;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    table {
+        margin: 10px auto;
+    }
+    main {
+        flex-direction: column;
+    }
+    .event-info {
+        margin: 0 auto 10px auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     table{
+        margin: 0;
+    }
+    main {
+        flex-direction: column;
+    }
+    .event-info {
         margin: 0;
     }
 }
