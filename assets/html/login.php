@@ -14,36 +14,34 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
             
-        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+        <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.html">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="agenda.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="login.php">Login</a></li>
+                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.html">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a class="login-cadastro" href="login.php">Login</a></li>
+                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
             </ul>
         </nav>
             
         <div class="login col-sm-8 col-md-6 col-lg-4"> <!-- Essa div vai conter os logins -->
-            <form class="formulario" action="" method="post" name="formulario"> <!-- Cria um formulário -->
+            <form class="formulario" action="../php/loginteste.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Email de Cadastro:</label><br>
-                <input class="resposta" type="text" name="nome" placeholder="Digite o nome"><br><br> 
+                <input class="resposta" type="text" name="email" placeholder="Digite o nome"><br><br> 
 
                 <label>Senha:</label><br>
-                <input class="resposta" type="text" name="confsenha" placeholder="Confirme a senha"><br>
+                <input class="resposta" type="password" name="senha" placeholder="Confirme a senha"><br>
                 <!-- placeholder é o que aparece dentro da caixinha -->
 
                 <br><input class="botao" type="submit" name="cadastrar" value="Logar"> <!-- botão -->

@@ -18,9 +18,9 @@
             <ul id="menu">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="login.php">Login</a></li>
+                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
             </ul>
         </nav>
 
@@ -29,9 +29,9 @@
             <ul id="menu-mobile">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="login.php">Login</a></li>
+                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
             </ul>
         </nav>
         
