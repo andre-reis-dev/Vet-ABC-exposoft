@@ -20,8 +20,8 @@ p {
     padding: 10px;
     text-indent: 20px;
 }
-/* div das logos */
 
+/* div das logos */
 .logos{
  width: 40px;
  height: 40px;
@@ -68,8 +68,6 @@ p {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);  
 }
 
-/* FIM DA CONF */
-
 /* CONFIGURAÇÃO DA CAIXINHA DA BÁRBARA */
 .box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
     height: auto;
@@ -102,7 +100,6 @@ p {
     margin-right: auto;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
-/* FIM DA CONF */
 
 /* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
 .box-camila{ /* box camila é toda a caixa que será armazenado as informações referentes a camila- a caixa toda */
@@ -138,9 +135,6 @@ p {
 }
 /* FIM DA CONFIG */
 
-
-
-
 .col-sm-1 {width: 8.33%;}
 .col-sm-2 {width: 16.66%;}
 .col-sm-3 {width: 25%;}
@@ -155,10 +149,7 @@ p {
 .col-sm-12 {width: 100%;}
 
 
-
-
-
-/* TAMANHO 600 */
+/* TAMANHO 600 TABLET*/
 @media only screen and (min-width:600px) {
     
     .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
@@ -211,7 +202,6 @@ p {
        border-radius: 0px; /* pra n ficar redondo */
        
    }
-       /* FIM DA CONF */
    
    /* CONFIGURAÇÃO DA CAIXINHA DA CAMILA */
    .box-camila{ /* box camila é toda a caixa que será armazenado as informações referentes a camila- a caixa toda */
@@ -237,7 +227,6 @@ p {
        border-radius: 0px; /* pra n ficar redondo */
        
    }
-   
     
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
@@ -253,26 +242,7 @@ p {
     .col-md-12 {width: 100%;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* TAMANHO 1024 */
+    /* TAMANHO 1024  PC*/
 @media only screen and (min-width: 1024px) {
     .caixote{
         display: flex; /* flexivel- deixar alinhado */

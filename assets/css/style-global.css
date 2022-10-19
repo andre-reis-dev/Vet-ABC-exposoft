@@ -97,7 +97,6 @@ a {
     }
 }
 
-
 .start-page-container {
     display: flex;
     justify-content: space-between;
@@ -152,7 +151,7 @@ a {
         float: right;
         margin-right: 15px;
     }
-
+    
     .links {
         display: flex;
         justify-content: center;
@@ -220,6 +219,8 @@ a {
 
     .start-page-container {
         flex-direction: row;
+        overflow: hidden;
+        z-index: 2;
     }
 
     .page-top {
@@ -234,6 +235,7 @@ a {
         align-items: center;
         flex-direction: column;
         justify-self: end;
+        z-index: 1;
     }
     .links > div {
         width: 30%;

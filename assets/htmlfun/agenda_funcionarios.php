@@ -31,6 +31,7 @@
         </ul>
     </nav>
     <nav class="nav-menu-mobile">
+        
         <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
         <ul id="menu-mobile">
             <li><a href="../../index.html">Home</a></li>

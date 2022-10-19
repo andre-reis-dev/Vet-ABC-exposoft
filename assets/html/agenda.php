@@ -22,18 +22,17 @@
     <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
         <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
         <ul id="menu">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="../../index.php">Home</a></li>
+            <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a href="agenda.php">Agenda</a></li>
-            <li><a class="login-cadastro" href="login.php">Login</a></li>
-            <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
     </nav>
     <nav class="nav-menu-mobile">
         <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
         <ul id="menu-mobile">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="../../index.php">Home</a></li>
+            <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a href="agenda.php">Agenda</a></li>
             <li><a class="login-cadastro" href="login.php">Login</a></li>
             <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>

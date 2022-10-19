@@ -1,16 +1,25 @@
+<?php
+    include('../php/loginteste.php');
+    echo "<style>.sair{display:none;}</style>";
+    if(isset($_SESSION['user'])){
+        echo "<style>.logout{display:none;}</style>";
+        echo "<style>.sair{display:block;}</style>";
+    }
+?>
+
 <html lang=pt-br>
     <head>
         <meta charset="utf-8">
          <title>Quem somos</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- aparecer o sinal do menu para celular -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- da uma limitação pro site -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com navegadores-->
-    <link rel="stylesheet" href="../css/style-quemsomos.css" > 
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- da uma limitação pro site -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com navegadores-->
+        <link rel="stylesheet" href="../css/style-quemsomos.css" > 
+        <link rel="stylesheet" href="../css/style-global.css">
+        <link rel="stylesheet" href="../css/rodape.css">
     
-</head>
+    </head>
     
     <body>
         <header class="area-logo"> <!-- parte branca da logo -->
@@ -20,21 +29,23 @@
         <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
             

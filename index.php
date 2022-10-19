@@ -1,3 +1,12 @@
+<?php
+    include('assets/php/loginteste.php'); //estou chamando o php que configura o login
+
+    echo "<style>.sair{display:none;}</style>"; //deixar o botão sair invisivel enquanto a pessoa não está logada
+    if(isset($_SESSION['user'])){ //se a pessoa logar aconte:
+        echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
+        echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,22 +25,24 @@
     <div class="page-top">
         <nav class="main-nav-bar">
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="assets/html/quemsomos.html">Quem Somos</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="assets/html/quemsomos.php">Quem Somos</a></li>
                 <li><a href="assets/html/agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="assets/html/login.php">Login</a></li>
-                <li><a class="login-cadastro" href="assets/html/cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="assets/html/login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="assets/html/cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="assets/php/logout.php">Sair</a></li> 
             </ul>
         
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="assets/html/quemsomos.html">Quem Somos</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="assets/html/quemsomos.php">Quem Somos</a></li>
                 <li><a href="assets/html/agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="assets/html/login.php">Login</a></li>
-                <li><a class="login-cadastro" href="assets/html/cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="/assets/html/login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="/assets/html/cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="assets/php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <div class="start-page-container">
@@ -44,7 +55,7 @@
                     </a>
                 </div>
                 <div class="box-sobre col-md-2 col-lg-2">
-                    <a href="assets/html/quemsomos.html">
+                    <a href="assets/html/quemsomos.php">
                         <h2>Sobre</h2>
                         <img src="assets/img/grupo-fundo-branco.png" alt="">
                     </a>
