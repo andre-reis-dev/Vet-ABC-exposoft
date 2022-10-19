@@ -45,7 +45,7 @@
                 <td colspan="7" class="first-row">
                     <div class="month-banner">
                         <input type="button" value="&lang;">
-                        <h1>Outubro</h1>
+                        <h1 id="monthBanner">Outubro</h1>
                         <input type="button" value="&rang;">
                     </div>
                 </td>
@@ -286,5 +286,6 @@
     </footer>
     
     <script src="../javascript/toggle_menu.js"></script>
+    <script src="../javascript/agenda.js"></script>
 </body>
 </html>
