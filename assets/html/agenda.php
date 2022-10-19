@@ -44,9 +44,9 @@
             <tr>
                 <td colspan="7" class="first-row">
                     <div class="month-banner">
-                        <input type="button" value="&lang;">
+                        <input type="button" value="&lang;" onclick="toggleMonth(0)">
                         <h1 id="monthBanner">Outubro</h1>
-                        <input type="button" value="&rang;">
+                        <input type="button" value="&rang;" onclick="toggleMonth(1)">
                     </div>
                 </td>
             </tr>
