@@ -19,23 +19,23 @@
         <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
         </nav>
             
@@ -46,7 +46,7 @@
                 <div class="cor-foto-a box-andre col-sm-12 col-md-12 col-lg-12"> </div> <!-- barrinha verde da caixinha -->
                 <div  class="foto-a" style="background-image: url(../img/andr%C3%A9.jpg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto"><!-- div de texto -->
-                    <p class="text-a"> <br> Eu sou o André Reis, dentro desse projeto exerci a função de desenvolvedor full-stack, fui responsável tanto por ajudar na criação do visual da página quanto na parte funcional da mesma.</p><br>
+                    <p class="text-a"> <br> Eu sou o André Reis, desenvolvedor front-end do projeto. Apesar de estar encarregado do layout das páginas, também dei uma ajudinha com o back-end do projeto. Fui responsável também por desenvolver nosso aplicativo móvel.</p><br>
                 </div> <!-- texto de informação -->
                 <div class="guarda-logo">
                     <a href="https://pt-br.facebook.com/"><img src="../img/facebook.png" class="logos"></a>
@@ -61,7 +61,7 @@
                 <div class="cor-foto-b box-andre col-sm-12 col-md-12 col-lg-12"> </div><!-- barrinha verde da caixinha -->
                 <div  class="foto-b" style="background-image: url(../img/barbara.jpeg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto">
-                    <p class="text-b"> <br> Eu sou a aluna Bárbara Barbato, dentro desse projeto eu exerci a função de gerente do grupo, fui a responsável por organizar os cronogramas da equipe e verificar o que cada integrante do grupo fez ao decorrer dos dias.</p><br>
+                    <p class="text-b"> <br> Eu sou a Bárbara, a gerente deste projeto. Minha principal função no projeto foi no desenvolvimento back-end do site, além de ter ajudado também no seu layout. Como gerente, fui responsável por organizar nossos cronogramas e tarefas.</p><br>
                 </div> <!-- texto de informação -->
                 <div class="guarda-logo">
                     <a href="https://pt-br.facebook.com/"><img src="../img/facebook.png" class="logos"></a>
@@ -76,7 +76,7 @@
                 <div class="cor-foto-c box-andre col-sm-12 col-md-12 col-lg-12"> </div><!-- barrinha verde da caixinha -->
                 <div  class="foto-c" style="background-image: url(../img/camila.jpg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto">
-                    <p class="text-c">Eu sou a Camila Afanasiev, dentro desse projeto também exerci a função de desenvolvedora full-stack, fui responsável tanto por ajudar na criação do visual da página quanto na parte funcional da mesma.
+                    <p class="text-c">Eu sou a Camila, desenvolvedora back-end do projeto. Além de desenvolver as funcionalidades internas do site, exerci também o papel de designer do grupo, sendo responsável pelos logos (do site e do grupo) e pela paleta de cores.
 
                     </p><br>
                 </div> <!-- texto de informação -->

@@ -6,6 +6,6 @@
 
     session_destroy(); //destroi ela
 
-    header("Location: ../../index.php"); //leva para o index
+    header("Location: ../html/index.php"); //leva para o index
 
 ?>

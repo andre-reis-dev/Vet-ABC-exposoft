@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,38 +19,37 @@
         <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
     </header>
     
-    <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
-        <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
-        <ul id="menu">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
-            <li><a href="agenda_funcionarios.php">Agenda</a></li>
-            <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-            <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-            <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
-        </ul>
-    </nav>
-    <nav class="nav-menu-mobile">
-        
-        <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
-        <ul id="menu-mobile">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
-            <li><a href="agenda_funcionarios.php">Agenda</a></li>
-            <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-            <li><a class="login-cadastro" href="cadastro_consulta.html">Cadastro</a></li>
-            <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
-        </ul>
-    </nav>
+        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+            <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
+            <ul id="menu">
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
+                <li><a href="agenda_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-menu-mobile">
+            <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
+            <ul id="menu-mobile">
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
+                <li><a href="agenda_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+            </ul>
+        </nav>
 
     <main>
         <table class="col-sm-12 col-md-11 col-lg-8">
             <tr>
                 <td colspan="7" class="first-row">
                     <div class="month-banner">
-                        <input type="button" value="&lang;">
-                        <h1>Outubro</h1>
-                        <input type="button" value="&rang;">
+                        <input type="button" value="&lang;" onclick="toggleMonth(0)">
+                        <h1 id="monthBanner">Outubro</h1>
+                        <input type="button" value="&rang;" onclick="toggleMonth(1)">
                     </div>
                 </td>
             </tr>
@@ -290,5 +289,6 @@
     </footer>
     
     <script src="../javascript/toggle_menu.js"></script>
+    <script src="../javascript/agenda.js"></script>
 </body>
 </html>

@@ -22,6 +22,10 @@ h2 {
     color: black;
 }
 
+.area-logo{
+    background-color: white;
+}
+
 header {
     display: flex; /*define o display do elemento como flex, o que habilita diversas configurações compatíveis apenas com display flex*/
     justify-content: center; /*alinha os elementos dentro de um box com display flex para o centro no eixo x. É uma das configurações exclusivas do display flex.*/

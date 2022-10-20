@@ -13,25 +13,25 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
         
-        <nav class="main-nav-bar"><!-- ESSE MENU É PARA PC E TABLET -->
-            <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
+        <nav class="main-nav-bar">
             <ul id="menu">
-                <li><a href="../../index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="agenda.php">Consulta</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
             </ul>
+        
         </nav>
-
-        <nav class="nav-menu-mobile"> <!-- ESSE MENU É PARA CELULAR -->
+        <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="../../index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="agenda.php">Consulta</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         

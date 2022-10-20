@@ -16,23 +16,23 @@
         <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos_funcionarios.html">Quem Somos</a></li>
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login_funcionarios.html">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.html">Cadastro</a></li>
-                <li><a href="cadastro_consulta.html">Agendar Consulta</a></li>
+                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
         </nav>
         
