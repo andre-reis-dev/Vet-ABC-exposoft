@@ -1,5 +1,6 @@
 <?php
     include('../php/protecaoAgenda.php');
+    include('../php/consultas_clientes.php')
 ?>
 
 <!DOCTYPE html>
