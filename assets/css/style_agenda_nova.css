@@ -1,0 +1,77 @@
+main {
+    margin: 10px auto ;
+    color: #004632;
+}
+
+h1 {
+    text-align: center;
+    color: #002017;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+main > div > div > h2 {
+    color: #004632;
+    display: inline-block;
+}
+
+.day-container {
+    margin: 30px 0px;
+}
+
+.top {
+    width: 100%;
+    cursor: pointer;
+}
+.top > span {
+    vertical-align: middle;
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+.top > span:active {
+    background-color: rgb(237, 237, 237);
+    transition:all .3s ease-in-out;
+}
+main > div > div > hr {
+    background-color: #004632;
+    height: 1px;
+    border: none;
+    border-radius: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+.month-container {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002017;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.month-container > .material-symbols-outlined {
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+.material-symbols-outlined {
+    margin: 0px 15px;
+}
+
+.event-content {
+    display: none;
+    margin: 10px 0px 0px 0px;
+}
+.event-content > h4 {
+    display: inline;
+}
+.event-content > p {
+    margin: 10px 0px;
+}
