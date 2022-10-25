@@ -4,9 +4,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <meta name="viewport" charset="utf-8"> <!-- IMG DO TRIBAR -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="../css/style-cadastro.css">
-        <link rel="stylesheet" href="../css/style-global.css">
-        <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="style-cadastro.css">
+        <link rel="stylesheet" href="style-global.css">
+        <link rel="stylesheet" href="rodape.css">
     </head>
     <body>       
         <header class="area-logo"><!-- Aqui fica a logo da página -->
@@ -36,7 +36,7 @@
         </nav>
         
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
-            <form class="formulario" action="../php/cadastro_cliente.php" method="post" name="formulario"> <!-- Cria um formulário -->
+            <form class="formulario" action="cadastro_cliente.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Nome Completo:</label><br>
                 <input class="resposta" type="text" name="nome" placeholder="Digite o nome"><br><br>
 
