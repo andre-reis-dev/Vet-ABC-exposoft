@@ -5,5 +5,5 @@ let eventVisibility = false;
 function showEvent (n) {
     if (eventVisibility = false) {
         eventContents[n].style.display = 'block';
-    }
+    } 
 }
