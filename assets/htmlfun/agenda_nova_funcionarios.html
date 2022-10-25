@@ -46,13 +46,36 @@
 
     <main class="col-lg-11">
         <div class="month-container">
-            <span class="material-symbols-outlined" id="arrow-left">chevron_left</span>
-            <span class="month"><strong>Outubro</strong></span>
-            <span class="material-symbols-outlined" id="arrow-right">chevron_right</span>
+            <span class="material-symbols-outlined" id="arrow-left" onclick="toggleMonth(0)">chevron_left</span>
+            <span class="month" id="monthBanner"><strong>Outubro</strong></span>
+            <span class="material-symbols-outlined" id="arrow-right" onclick="toggleMonth(1)">chevron_right</span>
         </div>
         <div class="day-container">
-            <div class="top" onclick="showEvent(0)">
+            <div id="top" class="top" onclick="showEvent(0)">
                 <h2>Hoje</h2>
+                <span class="material-symbols-outlined show-buttons">expand_more</span>
+                <hr>
+            </div>
+            <div id="event-content" class="event-content">
+                <p>
+                    <h4><strong>Nome do Dono: </strong></h4>
+                    <span>Fulaninho</span>
+                </p>
+
+                <p>
+                    <h4><strong>Horário da Consulta </strong></h4>
+                    <span>12:45</span>
+                </p>
+
+                <p>
+                    <h4><strong>Raça do Pet: </strong></h4>
+                    <span>Pitbull</span>
+                </p>
+            </div>
+        </div>
+        <div class="day-container">
+            <div class="top" onclick="showEvent(1)">
+                <h2>Dia 26</h2>
                 <span class="material-symbols-outlined show-buttons">expand_more</span>
                 <hr>
             </div>
@@ -74,7 +97,30 @@
             </div>
         </div>
         <div class="day-container">
-            <div class="top" onclick="showEvent(1)">
+            <div class="top" onclick="showEvent(2)">
+                <h2>Dia 26</h2>
+                <span class="material-symbols-outlined show-buttons">expand_more</span>
+                <hr>
+            </div>
+            <div class="event-content">
+                <p>
+                    <h4><strong>Nome do Dono: </strong></h4>
+                    <span>Fulaninho</span>
+                </p>
+
+                <p>
+                    <h4><strong>Horário da Consulta </strong></h4>
+                    <span>12:45</span>
+                </p>
+
+                <p>
+                    <h4><strong>Raça do Pet: </strong></h4>
+                    <span>Pitbull</span>
+                </p>
+            </div>
+        </div>
+        <div class="day-container">
+            <div class="top" onclick="showEvent(3)">
                 <h2>Dia 26</h2>
                 <span class="material-symbols-outlined show-buttons">expand_more</span>
                 <hr>

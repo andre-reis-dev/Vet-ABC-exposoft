@@ -31,10 +31,12 @@ main > div > div > h2 {
     cursor: pointer;
     padding: 5px;
     border-radius: 50%;
+    
 }
 .top > span:active {
     background-color: rgb(237, 237, 237);
     transition:all .3s ease-in-out;
+    
 }
 main > div > div > hr {
     background-color: #004632;
@@ -52,7 +54,7 @@ main > div > div > hr {
     background-color: #002017;
     color: white;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
@@ -68,10 +70,36 @@ main > div > div > hr {
 .event-content {
     display: none;
     margin: 10px 0px 0px 0px;
+    animation-duration: .3s;
+    overflow: hidden;
 }
 .event-content > h4 {
     display: inline;
 }
 .event-content > p {
     margin: 10px 0px;
+}
+#arrow-left, #arrow-right {
+    cursor: pointer;
+    padding: 3px;
+    transition: all .1s ease-in-out;
+}
+#arrow-left:active, #arrow-right:active {
+    background-color: #032b20;
+    border-radius: 50%;
+}
+
+@keyframes contentDown {
+    from {
+        height: 0px;
+    } to {
+        height: 74px;
+    }
+}
+@keyframes contentUp {
+    from {
+        height: 74px;
+    } to {
+        height: 0px;
+    }
 }
