@@ -29,8 +29,8 @@
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
@@ -40,8 +40,8 @@
             <ul id="menu-mobile">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
@@ -51,19 +51,19 @@
             <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
             <div class="links">
                 <div class="box-agenda col-md-2 col-lg-2">
-                    <a href="../html/agenda.php">
+                    <a href="../htmlfun/agenda_nova_funcionarios.php">
                         <h2>Agenda</h2>
                         <img src="../img/agenda.png" alt="">
                     </a>
                 </div>
                 <div class="box-sobre col-md-2 col-lg-2">
-                    <a href="../html/quemsomos.php">
+                    <a href="../htmlfun/quemsomos_funcionarios.php">
                         <h2>Sobre</h2>
                         <img src="../img/grupo-fundo-branco.png" alt="">
                     </a>
                 </div>
                 <div class="box-login col-md-2 col-lg-2">
-                    <a href="../html/cadastro.php">
+                    <a href="../htmlfun/cadastro_consulta.php">
                         <h2>Cadastro</h2>
                         <img src="../img/cadastro.png" alt="">
                     </a>

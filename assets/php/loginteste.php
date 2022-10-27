@@ -1,10 +1,9 @@
-
 <?php
     session_start(); //inicia uma sessão (isso permte saber se está logado ou não)
 
     $conexao=mysqli_connect("localhost","root","","vet-abc"); //leva a conexão até o banco de dados
     
-    if(isset($_POST['email']) || isset($_POST['senha'])){ //esse email e senha é do html debaixo
+    if(isset($_POST['email']) || isset($_POST['senha'])){ //esse email e senha é do html
 
         if(strlen($_POST['email']) == 0 ){ //caso a pessoa não tenha digitado nada aparecera isso
 
@@ -15,7 +14,7 @@
 
             echo "<script> alert('Preencha sua senha')</script>";
 
-        }else{                                     // se a pessoa digitou td certinho vai seguir o código abaixo
+        }else{// se a pessoa digitou td certinho vai seguir o código abaixo
             $email = $_POST['email'];
             $senha = $_POST['senha'];
 
@@ -29,7 +28,7 @@
 
                     $_SESSION['user'] = $linha['email'];
 
-                    header("Location: ../htmlfun/agenda_funcionarios.php"); //leva para a pag de funcionários
+                    header("Location: ../htmlfun/agenda_nova_funcionarios.php"); //leva para a pag de funcionários
 
                 }else if($quantidade == 1){ //parte de clientes abaixo
 

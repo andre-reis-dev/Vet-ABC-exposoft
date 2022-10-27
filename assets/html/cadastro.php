@@ -1,3 +1,10 @@
+<?php
+    echo "<style>.sair{display:none;}</style>"; //deixar o botão sair invisivel enquanto a pessoa não está logada
+    if(isset($_SESSION['user'])){ //se a pessoa logar aconte:
+        echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
+        echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
+    }
+?>
 <html>
     <head>
         <title>Cadastro</title>
@@ -13,49 +20,49 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
         
-        <nav class="main-nav-bar"><!-- ESSE MENU É PARA PC E TABLET -->
-            <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
-            <ul id="menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
-            </ul>
-        </nav>
-
-        <nav class="nav-menu-mobile"> <!-- ESSE MENU É PARA CELULAR -->
-            <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
-            <ul id="menu-mobile">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="agenda.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="login.php">Login</a></li>
-                <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
-            </ul>
-        </nav>
+    <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+        <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
+        <ul id="menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="quemsomos.php">Quem Somos</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li> 
+        </ul>
+    </nav>
+    <nav class="nav-menu-mobile">
+        <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
+        <ul id="menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="quemsomos.php">Quem Somos</a></li>
+                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li> 
+        </ul>
+    </nav>
         
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
             <form class="formulario" action="../php/cadastro_cliente.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Nome Completo:</label><br>
-                <input required class="resposta" type="text" name="nome" placeholder="Digite o nome" id="nome" ><br><br>
+                <input class="resposta" type="text" name="nome" placeholder="Digite o nome" id="nome" ><br><br>
 
                 <label> CPF :</label><br>
-                <input required class="resposta" type="text" name="cpf" placeholder="Digite o CPF"   id="cpf" ><br><br>
-                <!-- required, mostra uma mensagem caso o campo não seja preenchido
-                    placeholder, uma mensagem que aparecera dentro da caixinha do usuário--> 
+                <input class="resposta" type="text" name="cpf" placeholder="Digite o CPF" id="cpf"><br><br>
+
                 <label> Telefone:</label><br>
-                <input required class="resposta" type="text"  name="telefone" id="telefone" placeholder="Digite o telefone">
+                <input class="resposta" type="text"  name="telefone" id="telefone" placeholder="Digite o telefone">
 
                 <br><br>
                 <label>Email:</label><br>
-                <input required class="resposta" type="text" name="email" placeholder="Digite o email" id="email"><br><br>
+                <input class="resposta" type="text" name="email" placeholder="Digite o email" id="email"><br><br>
 
                 <label>Senha:</label><br>
-                <input required class="resposta" type="password" name="senha" placeholder="Digite a senha" id="senha" ><br><br>
+                <input class="resposta" type="password" name="senha" placeholder="Digite a senha" id="senha"><br><br>
 
                 <label>Confirmação da Senha:</label><br>
-                <input required class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="configsenha" ><br>
+                <input class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="configsenha"><br>
                 <!-- placeholder é o que aparece dentro da caixinha -->
 
                 <br><input class="botao" type="submit" name="cadastrar" value="cadastrar"> <!-- aqui eu crio um botão -->
@@ -75,12 +82,9 @@
             </div>
         </footer>
         <script src="../javascript/toggle_menu.js"></script>
-        <script type="text/javascript" src="jquery.js "></script>
-        <script type="text/javascript" src="jquerycfp.js"></script> 
+        <script type="text/javascript" src="../javascript/jquery.js "></script>
+        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
         <script src="../javascript/verificacao_cadastro.js"></script>
-       
-        
-  
     </body>
 </html>
 

@@ -52,7 +52,7 @@
             <div class="links">
                 <div class="box-agenda col-md-2 col-lg-2">
                     <a href="../html/agenda.php">
-                        <h2>Agenda</h2>
+                        <h2>Consulta</h2>
                         <img src="../img/agenda.png" alt="">
                     </a>
                 </div>

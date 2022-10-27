@@ -1,6 +1,4 @@
-
 <?php
-
 if (isset($_POST["cadastrar"]))
 {
     $conexao=mysqli_connect("localhost","root","","vet-abc");
@@ -32,7 +30,5 @@ if (isset($_POST["cadastrar"]))
         header("Location: ../html/login.php");
         }
     }
-    
-   
-}   
+}  
 ?>

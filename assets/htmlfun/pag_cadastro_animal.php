@@ -18,8 +18,8 @@
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
@@ -29,35 +29,41 @@
             <ul id="menu-mobile">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
         </nav>
         
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
-            <form class="formulario" action="" method="post" name="formulario"> <!-- Cria um formulário -->
-                <label>Nome Completo:</label><br>
-                <input class="resposta" type="text" name="nome" placeholder="Digite o nome"><br><br>
+            <form class="formulario" action="../php/cadastro_animal.php" method="post" name="formulario"> <!-- Cria um formulário -->
+                <label>Cpf do dono: </label><br>
+                <input class="resposta" type="text" name="cpf_dono" placeholder="Email do Dono" id="nome" ><br><br>
 
-                <label> Telefone:</label><br>
-                <input class="resposta" type="text" name="telefone" placeholder="Digite o telefone"><br><br>
+                <label>Nome do Animal:</label><br>
+                <input class="resposta" type="text" name="nome_animal" placeholder="Nome do animal"><br><br>
 
-                <label> Telefone:</label><br>
-                <input class="resposta" type="text" name="telefone" placeholder="Digite o telefone"><br><br>
+                <label>Idade:</label><br>
+                <input class="resposta" type="text"  name="idade"  placeholder="Idade do animal">
 
-                <label>Email:</label><br>
-                <input class="resposta" type="text" name="email" placeholder="Digite o email"><br><br>
+                <br><br>
+                <label>Peso:</label><br>
+                <input class="resposta" type="text" name="peso" placeholder="Peso do animal"><br><br>
 
-                <label>Senha:</label><br>
-                <input class="resposta" type="text" name="senha" placeholder="Digite a senha"><br><br>
+                <label>Tamanho:</label><br>
+                <input class="resposta" type="text" name="tamanho" placeholder="Tamnho do animal"><br><br>
 
-                <label>Confirmação da Senha:</label><br>
-                <input class="resposta" type="text" name="confsenha" placeholder="Confirme a senha"><br>
+                <label>Tipo do Animal:</label><br>
+                <input class="resposta" type="text" name="tipo_animal" placeholder="Exemplo: Cachorro"><br><br>
+
+                <label>Raça:</label><br>
+                <input class="resposta" type="text" name="raca" placeholder="Exemplo: Labrador"><br>
                 <!-- placeholder é o que aparece dentro da caixinha -->
 
-                <br><input class="botao" type="submit" name="cadastrar" value="cadastrar"> <!-- aqui eu crio um botão -->
+                <br><input class="botao" type="submit" name="cadastrar_animal" value="cadastrar"> <!-- aqui eu crio um botão -->
+
+                
             </form>
         </div>
 
@@ -72,5 +78,8 @@
             </div>
         </footer>
         <script src="../javascript/toggle_menu.js"></script>
+        <script type="text/javascript" src="../javascript/jquery.js "></script>
+        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
+        <script src="../javascript/verificacao_cadastro.js"></script>
     </body>
 </html>
