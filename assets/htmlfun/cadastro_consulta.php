@@ -1,5 +1,6 @@
 <?php
     include('../php/protecaoAgenda.php');
+    include('../php/agenda_consulta.php')
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +25,8 @@
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
@@ -35,8 +36,8 @@
             <ul id="menu-mobile">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
-                <li><a href="agenda_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="cadastro_funcionarios.php">Cadastro</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
                 <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
             </ul>
@@ -45,8 +46,12 @@
         <form class="col-sm-12 col-md-11 col-lg-10" action="" method="post">
             <h1>Cadastro de Consulta</h1>
             <p>
-                <label for="Nome">CPF do Dono</label>
-                <input type="text" name="cpf_dono">
+                <label for="Nome">Nome do dono</label>
+                <input type="text" name="nome_dono">
+            </p>
+            <p>
+                <label for="Nome">Email do dono</label>
+                <input type="email" name="email_dono">
             </p>
             <p>
                 <label for="Nome">Tipo/raça do Animal</label>
@@ -68,7 +73,7 @@
                 <label for="Nome">Tipo de Consulta</label>
                 <input type="text" name="tipo_consulta">
             </p>
-            <input class="button-submit col-sm-12 col-md-6 col-lg-4" type="submit" name="submit" value="Marcar Consulta">
+            <input class="button-submit col-sm-12 col-md-6 col-lg-4" type="submit" name="agendar" value="Marcar Consulta">
         </form>
 
         <footer class="rodape col-sm-12 col-md-12 col-lg-12">
