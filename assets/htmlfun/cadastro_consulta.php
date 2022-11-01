@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../css/style-global.css">
         <link rel="stylesheet" href="../css/rodape.css">
         <link rel="stylesheet" href="../css/cad_consulta.css">
+        <link rel="stylesheet
         <title>Cadastro de Consultas</title>
     </head>
     <body>
@@ -43,35 +44,31 @@
             </ul>
         </nav>
 
-        <form class="col-sm-12 col-md-11 col-lg-10" action="" method="post">
+        <form class="col-sm-12 col-md-11 col-lg-10" action="../php/agenda_consulta.php" method="post">
             <h1>Cadastro de Consulta</h1>
             <p>
-                <label for="Nome">Nome do dono</label>
-                <input type="text" name="nome_dono">
+                <label for="Nome">Nome do animal</label>
+                <input required type="text" name="nome_animal">
             </p>
             <p>
-                <label for="Nome">Email do dono</label>
-                <input type="email" name="email_dono">
+                <label for="Nome">CPF do dono</label>
+                <input required type="cpf" name="cpf_dono" id="cpf">
             </p>
             <p>
-                <label for="Nome">Tipo/raça do Animal</label>
-                <input type="text" name="tipo_animal">
-            </p>
-            <p>
-                <label for="Nome">Data de Nascimento do Animal</label>
-                <input type="date" name="dtnasc_animal">
+                <label for="Nome">Nome do médico</label>
+                <input required type="text" name="medico">
             </p>
             <p>
                 <label for="Nome">Horário da Consulta</label>
-                <input type="time" name="hora_consulta">
+                <input required type="time" name="horas">
             </p>
             <p>
                 <label for="Nome">Dia da Consulta</label>
-                <input type="date" name="data_consulta">
+                <input required type="date" name="data_consulta">
             </p>
             <p>
                 <label for="Nome">Tipo de Consulta</label>
-                <input type="text" name="tipo_consulta">
+                <input required type="text" name="tipo_exame">
             </p>
             <input class="button-submit col-sm-12 col-md-6 col-lg-4" type="submit" name="agendar" value="Marcar Consulta">
         </form>
@@ -88,5 +85,12 @@
         </footer>
 
         <script src="../javascript/toggle_menu.js"></script>
+        <script type="text/javascript" src="../javascript/jquery.js "></script>
+        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
+        <script>
+            $(document).ready(function(){
+                $('#cpf').mask('999.999.999-99');
+            });
+        </script>
     </body>
 </html>
