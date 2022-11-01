@@ -46,23 +46,23 @@
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
             <form class="formulario" action="../php/cadastro_cliente.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Nome Completo:</label><br>
-                <input class="resposta" type="text" name="nome" placeholder="Digite o nome" id="nome" ><br><br>
+                <input required class="resposta" type="text" name="nome" placeholder="Digite o nome" id="nome" ><br><br>
 
                 <label> CPF :</label><br>
-                <input class="resposta" type="text" name="cpf" placeholder="Digite o CPF" id="cpf"><br><br>
+                <input required class="resposta" type="text" name="cpf" placeholder="Digite o CPF" id="cpf"><br><br>
 
                 <label> Telefone:</label><br>
-                <input class="resposta" type="text"  name="telefone" id="telefone" placeholder="Digite o telefone">
+                <input required class="resposta" type="text"  name="telefone" id="telefone" placeholder="Digite o telefone">
 
                 <br><br>
                 <label>Email:</label><br>
-                <input class="resposta" type="text" name="email" placeholder="Digite o email" id="email"><br><br>
+                <input required class="resposta" type="text" name="email" placeholder="Digite o email" id="email"><br><br>
 
                 <label>Senha:</label><br>
-                <input class="resposta" type="password" name="senha" placeholder="Digite a senha" id="senha"><br><br>
+                <input required class="resposta" type="password" name="senha" placeholder="Digite a senha" id="senha"><br><br>
 
                 <label>Confirmação da Senha:</label><br>
-                <input class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="configsenha"><br>
+                <input required class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="configsenha"><br>
                 <!-- placeholder é o que aparece dentro da caixinha -->
 
                 <br><input class="botao" type="submit" name="cadastrar" value="cadastrar"> <!-- aqui eu crio um botão -->
