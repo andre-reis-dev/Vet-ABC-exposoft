@@ -15,7 +15,7 @@
             $sql_cpf = "SELECT * FROM cadastro WHERE cpf= '$cpf_dono' ";
             $result1 = mysqli_query($conexao,$sql_cpf);
             $numlinhas = mysqli_num_rows($result1);
-            if (mysqli_num_rows($result1) == 0){
+            if (mysqli_num_rows($result1) != 0){
                 #num_rows mosta a qauntidadede linhas;
                 echo "<script> alert (' cpf não existente')</script>";
             } else
@@ -33,16 +33,14 @@
                     
               
                     $sql= "INSERT INTO cadconsulta (medico, horas, data_consulta, tipo_exame, nome_animal, cpf_dono) VALUES ('$medico', '$horas', '$data_consulta', '$tipo_exame', '$nome_animal', '$cpf_dono')";
-                }}}
-                    $result=mysqli_query($conexao,$sql);
-                    header("Location: ../html/cadastro_consulta.php");
-                }
-
-           
-           
                     
- 
-       
+                }
+                $result=mysqli_query($conexao,$sql);
+                 echo "<script> window.Location.href=' ../html/cadastro_consulta.php')</script>;"
+            }}
+                   
+    }
+   
  
 ?>
 
