@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST["cadastrar"]))
-{
+
+if (isset($_POST["cadastrar"])){
     $conexao=mysqli_connect("localhost","root","","vet-abc");
     $nome=$_POST['nome'];
     $cpf=$_POST['cpf'];
@@ -9,26 +9,42 @@ if (isset($_POST["cadastrar"]))
     $senha=$_POST['senha'];
     $conf_senha = $_POST['conf_senha'];
 
-    if ($conf_senha != $senha) {  #ver se as senhas conferem 
-        echo "oi!";
-
-        echo "<script>alert('Senhas não conferem, por favor, insira novamente!'); window.location='../html/cadastro.php'</script>";
+ 
+        $sql_email = "SELECT * FROM cadastro WHERE email = '$email' ";
+        $result1 = mysqli_query($conexao,$sql_email);
         
-    } else {  
-            $sql_email = "SELECT * FROM cadastro WHERE email = '$email' ";
-            $result = mysqli_query($conexao,$sql_email);
+        if (mysqli_num_rows($result1) != 0){  
+         
+            echo "<script>
+                alert ('email ja cadastrado')</script>";
+
+                while ($linha = mysqli_fetch_array($result1)){
+                    if ($cpf == $linha['cpf']){
+                        echo "<script>
+                        alert ('cpf ja cadastrado')</script>";
+                    } 
+              
+
+                $sql_cpf = "SELECT * FROM cadastro WHERE cpf = '$cpf'";
+            $result2 = mysqli_query($conexao,$sql_cpf);
+            if(mysqli_num_rows($result2) != 0){
+                echo "<script> alert (' cpf ja cadastrado')</script>";
+                
+                echo "<script> window.location.href= '../html/login.php'</script>"; 
+
+            }
+                                    }
+    }else{
+            $sql_cpf = "SELECT * FROM cadastro WHERE cpf = '$cpf'";
+            $result2 = mysqli_query($conexao,$sql_cpf);
+            if(mysqli_num_rows($result2) != 0){
+                echo "<script> alert (' cpf ja cadastrado, cadastrar novo email')</script>"; }
+              else {         
+              $sql=" INSERT INTO cadastro(nome, cpf, telefone, email, senha) VALUES ('$nome', '$cpf','$telefone', '$email', '$senha')";
+            $result=mysqli_query($conexao,$sql);
+            echo "<script> window.location.href=' ../html/login.php'</script>"; }
+              }
         
-            If (mysqli_num_rows($result) != 0){ 
-            
-              echo "<script> alert ('email existente')</script>";
-        } else {
+}      
 
-        $sql= "INSERT INTO cadastro (nome, cpf, telefone, email, senha) VALUES ('$nome','$cpf', '$telefone', '$email','$senha')";
-    
-        $result=mysqli_query($conexao,$sql);
-
-        header("Location: ../html/login.php");
-        }
-    }
-}  
 ?>

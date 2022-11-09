@@ -47,9 +47,9 @@
             <form class="formulario" action="../php/cadastro_cliente.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Nome Completo:</label><br>
                 <input required class="resposta" type="text" name="nome" placeholder="Digite o nome" id="nome" ><br><br>
-
+                    <!-- required: especifica que um campo de entrada deve ser preenchido antes de enviar o formulário. -->
                 <label> CPF :</label><br>
-                <input required class="resposta" type="text" name="cpf" placeholder="Digite o CPF" id="cpf"><br><br>
+                <input  required class="resposta" type="text" name="cpf" placeholder="Digite o CPF" id="cpf"><br><br>
 
                 <label> Telefone:</label><br>
                 <input required class="resposta" type="text"  name="telefone" id="telefone" placeholder="Digite o telefone">
@@ -62,7 +62,7 @@
                 <input required class="resposta" type="password" name="senha" placeholder="Digite a senha" id="senha"><br><br>
 
                 <label>Confirmação da Senha:</label><br>
-                <input required class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="configsenha"><br>
+                <input required class="resposta" type="password" name="conf_senha" placeholder="Confirme a senha" id="conf_senha"><br>
                 <!-- placeholder é o que aparece dentro da caixinha -->
 
                 <br><input class="botao" type="submit" name="cadastrar" value="cadastrar"> <!-- aqui eu crio um botão -->
@@ -84,7 +84,7 @@
         <script src="../javascript/toggle_menu.js"></script>
         <script type="text/javascript" src="../javascript/jquery.js "></script>
         <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
-        <script src="../javascript/verificacao_cadastro.js"></script>
+        <script src="../javascript/verificacao.js"></script>
     </body>
 </html>
 
