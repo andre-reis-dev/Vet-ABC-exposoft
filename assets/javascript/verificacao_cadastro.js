@@ -24,6 +24,10 @@ form.addEventListener("submit", (e) => { // cria um evento chamado "submit", cuj
 function checkInputs() {
     const cpfValue = cpf.value; 
     const telefoneValue = telefone.value;
+    const nomeValue = nome.value;
+    const emailValue = email.value;
+    const senhaValue = senha.value;
+    const configValue = config.value;
     /*
         variáveis que recebem os valores digitados pelo usuário, uma para cada informação.
     */
@@ -56,13 +60,13 @@ function checkInputs() {
             small[2].innerText = ''
         }
     }
-    if (emialValue == ""){
+    if (emailValue == ""){
         small[3].innerText = 'O campo do Email é obrigatório'
     }else{
-        if (emialValue.length <= 0){
+        if (emailValue.length <= 0){
             small[3].innerText = 'Por favor, digite seu Email'
         }else{
-            smail[3].innerText = ''
+            small[3].innerText = ''
         }
 
     }
@@ -79,7 +83,3 @@ function checkInputs() {
     small[5].innerText = 'O campo da Sennha é obrgatório'
 }
 }
-
-
-
-
