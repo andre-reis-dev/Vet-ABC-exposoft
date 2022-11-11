@@ -16,15 +16,15 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc"><!-- imagem logo -->
         </header>
         
-        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+        <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
@@ -33,9 +33,9 @@
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
             
@@ -90,10 +90,10 @@
         
         </div>
 
-        <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-            <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
-            <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
-            <div class="info"> <!-- classe onde estáarmazenado as informações -->
+        <footer class="rodape col-sm-12 col-md-12 col-lg-12"> <!-- rodapé -->
+            <img src="../img/alcina.jpg" class="logo-alcina">
+            <img src="../img/logo-abc.png" class="logo-abc">
+            <div class="info">
                 <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
                 <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
                 <p class="r-email">secretaria.alcina@gmail.com</p>

@@ -1,6 +1,68 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.images{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.h1_consulta{
+    margin-top: 70px;
+    font-size: 38px;
+}
+
+.footer{
+    margin-top: 70px;
+}
+
+#selecionar{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+.duvida{
+    color: rgb(47, 134, 29);
+    text-decoration: underline;
+}
+
+.mensagem{
+    margin:50px auto;
+    width: 85%;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+}
+
+input{
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(14, 65, 48);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+select{
+    border:3px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(14, 65, 48);
+    color:white;
+    font-size: 20px; 
+}
+
 main {
     margin: 10px auto ;
     color: #004632;
+}
+main:last-child {
+    margin-bottom: 600px;
 }
 
 h1 {
@@ -14,6 +76,17 @@ h1 {
 main > div > div > h2 {
     color: #004632;
     display: inline-block;
+}
+
+form{
+    background-color: #004632;
+    height: 80%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
 .day-container {
@@ -55,7 +128,7 @@ main > div > div > hr {
     color: white;
     padding: 5px;
     border-radius: 30px;
-    width: 80%;
+    width: 20%;
     margin: auto;
     margin-bottom: 50px;
 }

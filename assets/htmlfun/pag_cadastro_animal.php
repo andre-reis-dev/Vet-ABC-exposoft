@@ -13,15 +13,15 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
         
-        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+        <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
@@ -30,28 +30,24 @@
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
             <form class="formulario" action="../php/cadastro_animal.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Cpf do dono: </label><br>
-                <input class="resposta" type="text" name="cpf_dono" placeholder="Email do Dono" id="nome" ><br><br>
+                <input class="resposta" type="text" name="cpf_dono" placeholder="Cpf do Dono" id="nome" ><br><br>
 
                 <label>Nome do Animal:</label><br>
                 <input class="resposta" type="text" name="nome_animal" placeholder="Nome do animal"><br><br>
 
                 <label>Idade:</label><br>
-                <input class="resposta" type="text"  name="idade"  placeholder="Idade do animal">
-
-                <br><br>
-                <label>Peso:</label><br>
-                <input class="resposta" type="text" name="peso" placeholder="Peso do animal"><br><br>
-
-                <label>Tamanho:</label><br>
+                <input class="resposta" type="text"  name="idade"  placeholder="Idade do animal"><br><br>
+        
+                <label>Porte do Animal:</label><br>
                 <input class="resposta" type="text" name="tamanho" placeholder="Tamnho do animal"><br><br>
 
                 <label>Tipo do Animal:</label><br>

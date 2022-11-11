@@ -1,7 +1,6 @@
 <?php
     include('../php/protecaoAgenda.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../css/style-global.css">
     <link rel="stylesheet" href="../css/rodape.css">
-    <link rel="stylesheet" href="../css/agenda.css">
+    <link rel="stylesheet" href="../css/aggenda.css">
     <title>Agenda</title>
 </head>
 <body>
@@ -34,41 +33,82 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
-            <li><a class="login-cadastro" href="login.php">Login</a></li>
-            <li><a class="login-cadastro" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
     </nav>
+    <div class='event-conteiner'>
 
-    <main>
+    <?php
+        if(!isset($_SESSION)){ //inicia a sessão
+            session_start();
+        }
+        
+        if(isset($_SESSION['user'])){
 
-    <div class="event-info col-sm-12 col-md-11 col-lg-4">
-        <div class="title">
-            <h1>Consulta do dia XX</h1>
-        </div>
-        <div class="event-content">
-            <div>
-                <h3>Nome do Cliente</h3>
-                <span>Adalto Lourenço</span>
-            </div>
-            <div>
-                <h3>Raça do Animal</h3>
-                <span>Cão, Pitbull Terrié</span>
-            </div>
-            <div>
-                <h3>Nome do Profissional</h3>
-                <span>Roberto Carlos da Rocha Costa de Bourbon</span>
-            </div>
-            <div>
-                <h3>Horário da Consulta </h3>
-                <span><span class="material-symbols-outlined clock"> schedule </span>17:30</span>
-            </div>
-        </div>
-    </main>
+            $conexao = mysqli_connect("localhost","root","","vet-abc");
+            $sql_email = "SELECT * FROM `cadastro` WHERE email LIKE '".$_SESSION['user']."'";//seleciono o cpf do email do usuário
+            $resulta_email = mysqli_query($conexao,$sql_email); //faço a ação
 
+            while ($linha1 = mysqli_fetch_array($resulta_email)){
+                $cpf = $linha1['cpf'];
+                $nome = $linha1['nome'];
+                $sql_pesquisa = "SELECT date_format(data_consulta, '%d/%m/%Y'), data_consulta, nome_animal, medico, horas, tipo_exame FROM cadconsulta WHERE cpf_dono = '".$cpf."' ORDER BY data_consulta ASC "; //pego tudo da tabela cadconsulta onde o cpf é igual ao cpf do usuário
+                $resulta_cpf = mysqli_query($conexao,$sql_pesquisa); //faço a ação
+                $numero_linhas = mysqli_num_rows($resulta_cpf);
+                
+                if($numero_linhas != 0){
+                    while ($linha = mysqli_fetch_array($resulta_cpf)){
+
+                        $data = $linha['data_consulta'];
+                        $data = implode("/",array_reverse(explode("-",$data)));
+
+                        echo "<main>
+                            <div class='event-info col-sm-12 col-md-11 col-lg-12'>
+                                <div class='title'>
+                                    <h1>Consulta ".$data."</h1>
+                                </div>
+                                <div class='event-content'>
+                                    <div>
+                                        <h3>Nome do Cliente</h3>
+                                        <span>".$linha1['nome']."</span>
+                                    </div>
+                                    <div>
+                                        <h3>Nome do Animal</h3>
+                                        <span>".$linha['nome_animal']."</span>
+                                    </div>
+                                    <div>
+                                        <h3>Nome do Profissional</h3>
+                                        <span>".$linha['medico']."</span>
+                                    </div>
+                                    <div>
+                                        <h3>Horário da Consulta </h3>
+                                        <span><span class='material-symbols-outlined clock'> schedule </span>".$linha['horas']."</span>
+                                    </div>
+                                    <div>
+                                        <h3>Sobre a Consulta:</h3>
+                                        <span>".$linha['tipo_exame']."</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </main>";
+                    }
+                
+                }else{
+                    echo "<link rel='stylesheet' href='../css/style-agenda.css'>";
+                    echo "<div></div>"; //essa div foi criada para centralizar a div debaixo
+                    echo "<div class='mensagem col-lg-12'><h3>Ops... parece que você não tem nenhuma consulta marcada. Acesse a página de ajuda e saiba como agendar uma consulta clicando <a class='duvida' href='ajuda.html'>aqui.</a></h3>
+                        <img src='../img/cao.png'>
+                    </div>";
+                }
+            }
+        }
+    ?>
+    </div>
     <footer class="rodape col-sm-12 col-md-12 col-lg-12">
         <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
         <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
-        <div class="info"> <!-- classe onde estáarmazenado as informações -->
+        <div class="info"> <!-- classe onde está armazenado as informações -->
             <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
             <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
             <p class="r-email">secretaria.alcina@gmail.com</p>

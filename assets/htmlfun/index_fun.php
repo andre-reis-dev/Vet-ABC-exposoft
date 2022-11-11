@@ -24,15 +24,15 @@
     </header>
 
     <div class="page-top">
-        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+    <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
@@ -41,9 +41,9 @@
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         

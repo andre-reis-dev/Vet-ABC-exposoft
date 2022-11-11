@@ -1,0 +1,122 @@
+table {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.event-conteiner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.first-row {
+    background-color: #005d43;
+    color: white;
+    height: 60px;
+}
+.month-banner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.month-banner > h1 {
+    align-self: center;
+}
+.month-banner > input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 15%;
+}
+td {
+    border: 1px solid rgba(0, 0, 0, 0.674);
+    height: 100px;
+    width: 100px;
+}
+.cell-container {
+    display: block;
+    height: 100%;
+}
+td > .cell-container > span {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+.last-month-days, .next-month-days {
+    color: rgb(108, 108, 108);
+}
+.event {
+    background-color: #005d43;  
+    border-radius: 5px;
+    margin: 0px 1px 2px 1px;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    min-height: 20px;
+    max-height: 25px;
+    overflow: hidden;
+}
+.event > p {
+    font-weight: bold;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+.event-info {
+    margin: 10px;
+    background-color:white;
+    height: fit-content;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.423);
+}
+.event-info > .title {
+    background-color: #005d43;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.event-content {
+    padding: 5px;
+}
+.event-content > div {
+    margin: 10px auto;
+}
+.clock {
+    vertical-align: bottom;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    table {
+        margin: 10px auto;
+    }
+    main {
+        flex-direction: column;
+    }
+    .event-info {
+        margin: 0 auto 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table{
+        margin: 0;
+    }
+    main {
+        flex-direction: column;
+    }
+    .event-info {
+        margin: 0;
+    }
+}

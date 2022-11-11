@@ -84,8 +84,8 @@
         <div class="row">
             <img class="col-sm-8 col-md-7 col-lg-4" src="../img/gato.jpeg" alt="">
             <div class="row-content col-sm-12 col-lg-8">
-                <h2 class="col-sm-12 col-md-12 col-lg-12">Nossa Localização</h2>
-                <p class="col-sm-12 col-md-10 col-lg-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus aliquam at, excepturi magnam maiores fugiat, rerum tenetur pariatur nesciunt nisi beatae porro provident ducimus omnis aperiam quod itaque nihil.</p>
+                <h2 class="col-sm-12 col-md-12 col-lg-12">Aqui você sempre encontrará:</h2>
+                <p class="col-sm-12 col-md-10 col-lg-8">Profissionais qualificados, ótimo atendimento, responsabilidade com os pets, equipamento de alta tecnologia e muito amor com seu bichinho.</p>
             </div>
         </div>
     </main>

@@ -141,7 +141,8 @@
         text-align: center;
         background-color: black;
         color: white;
-        height: 100px;    
+        height: 100px; 
+        align-self: flex-end;
     }
 
     .r-name{ /*texto*/
@@ -172,5 +173,7 @@
         left: 530;
         text-align: center;
     }
+
+    
 /* fim da config*/
 }

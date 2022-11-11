@@ -1,0 +1,35 @@
+.selecct{
+    background-color: rgb(14, 65, 48);
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+select{
+    border:3px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(14, 65, 48);
+    color:white;
+    font-size: 20px; 
+}
+.month{
+    font-size: 30px;
+    color: white;
+}
+
+input{
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(14, 65, 48);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.rodape{
+    margin-top: 300px;
+}

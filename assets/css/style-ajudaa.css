@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap');
+
+.box-branca{
+    width: 90%;
+    background-color: white;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    padding: 10px;
+}
+p{
+    font-family: 'Poppins' , sans-serif;
+}
+h2{
+    font-family: 'Poppins' , sans-serif;
+    color: #001812;
+}

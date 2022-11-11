@@ -1,6 +1,6 @@
 <?php
     include('../php/protecaoAgenda.php');
-    include('../php/agenda_consulta.php')
+    include('../php/agenda_consulta.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style-global.css">
         <link rel="stylesheet" href="../css/rodape.css">
-        <link rel="stylesheet" href="../css/cad_consulta.css">
-        <link rel="stylesheet
+        <link rel="stylesheet" href="../css/cad_consultas.css">
         <title>Cadastro de Consultas</title>
     </head>
     <body>
@@ -21,15 +20,15 @@
             <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
         </header>
         
-        <nav class="main-nav-bar"><!-- Essa div vai conter o MENU -->
+        <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
             <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro do animal</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         <nav class="nav-menu-mobile">
@@ -38,37 +37,40 @@
                 <li><a href="index_fun.php">Home</a></li>
                 <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
                 <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
-                <li><a class="login-cadastro" href="pag_cadastro_animal.php">Cadastro</a></li>
-                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
                 <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
 
-        <form class="col-sm-12 col-md-11 col-lg-10" action="../php/agenda_consulta.php" method="post">
+        <form class="col-sm-12 col-md-11 col-lg-10" action="" method="post">
             <h1>Cadastro de Consulta</h1>
             <p>
-                <label for="Nome">Nome do animal</label>
-                <input required type="text" name="nome_animal">
+                <label for="Nome">Cpf do dono</label>
+                <input type="text" name="cpf_dono">
             </p>
             <p>
-                <label for="Nome">CPF do dono</label>
-                <input required type="cpf" name="cpf_dono" id="cpf">
+                <label for="Nome">Nome do Animal</label>
+                <input type="text" name="nome_animal">
             </p>
             <p>
-                <label for="Nome">Nome do médico</label>
-                <input required type="text" name="medico">
+                <label for="Nome">Nome do Médico</label>
+                <select name="medico">
+                    <option value="Gabriel">Gabriel</option>
+                    <option value="Gustavo">Gustavo</option>
+                </select>
             </p>
             <p>
                 <label for="Nome">Horário da Consulta</label>
-                <input required type="time" name="horas">
+                <input type="time" name="hora_consulta">
             </p>
             <p>
                 <label for="Nome">Dia da Consulta</label>
-                <input required type="date" name="data_consulta">
+                <input type="date" name="data_consulta">
             </p>
             <p>
                 <label for="Nome">Tipo de Consulta</label>
-                <input required type="text" name="tipo_exame">
+                <input type="text" name="tipo_consulta">
             </p>
             <input class="button-submit col-sm-12 col-md-6 col-lg-4" type="submit" name="agendar" value="Marcar Consulta">
         </form>
@@ -85,12 +87,5 @@
         </footer>
 
         <script src="../javascript/toggle_menu.js"></script>
-        <script type="text/javascript" src="../javascript/jquery.js "></script>
-        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
-        <script>
-            $(document).ready(function(){
-                $('#cpf').mask('999.999.999-99');
-            });
-        </script>
     </body>
 </html>
