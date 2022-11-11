@@ -1,0 +1,62 @@
+.container {
+    height: 100vh;
+}
+
+h1 {
+    color: #002f22;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 30px auto;
+    width: 95%;
+    height: fit-content;
+    text-align: center;
+}
+form div {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0px auto 10px auto;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #002f22;
+    width: 100%;
+}
+button {
+    background-color: #00966c;
+    border: none;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    transition: .4s;
+    margin-top: 20px;
+    margin-bottom: 31px;
+}
+button:hover {
+    background-color: #017655;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        width: 90%;
+    }
+    button {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    form {
+        width: 80%;
+    }
+}

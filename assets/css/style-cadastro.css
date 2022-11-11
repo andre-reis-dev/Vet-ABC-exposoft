@@ -7,46 +7,54 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #66c0a7;
-}
+
 
 .area-logo{
     background-color: white;
 }
-
-.cadastro{ /*Caixa que contém todos os elementos do cadastro*/
-    margin-left: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-    margin-right: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-    background-color: white; /*COR DE FUNDO*/
-    width: 90%; /*LARGURA*/
-    height: auto; /*ALTURA*/
-    border-radius: 10px; /*CURVATURA DA BORDA*/
-    border: 2px solid black; /* BORDA */
-    padding-bottom: 3%; /* distancia entre o o texto e a borda da caixa branca */
-    padding-top: 2%; /* distancia entre o o texto e a borda da caixa branca */
-    margin-top: 10%; /* distancia entre a caixa branca e o menu */
-    margin-bottom: 5%; /*distancia entre a caixa branca e o rodapé*/
+label {
+    display: block;
+    margin-bottom: 10px;
 }
-
-.formulario{ /*Style que configura o formulário*/
+form{ /*Style que configura o formulário*/
+    width: 95%;
+    margin: auto;
     text-align: center;
-    font-family: poppins;
-    font-size: 20px;
-    padding-top: 8%; /*espaço entre o texto e o top do formul;ário*/
+}
+form > div {
+    margin: 25px 0px;
+    text-align: left;
+}
+form h1 {
+    margin: 10px 0px;
+    color: #002d21;
+}
+form > div > input {
+    padding: 5px;
 }
 
-.resposta{/*Style que configura as caixa que podem ser digitadas*/
-    text-align: center;
-    width: 250px; /*largura*/
+.resposta {
+    border: none;
+    border-bottom: 1px solid #002d21;
+    width: 100%;
 }
+
 
 .botao{/*configuração do menu*/
-    text-align: center;
-    width: 100px;
-    height: 50px;
-    border-radius:10px;
-    font-size: 15px;
+    width: 80%;
+    padding: 10px;
+    background-color: #00966c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    transition: .3s;
+}
+.botao:hover {
+    background-color: #17a079;
 }
 
 /* PEQUENO(CELULAR) */
@@ -77,25 +85,11 @@ body{
     .col-md-11{width: 91.66%}
     .col-md-12{width: 100%}
     
-    .formulario{ /*Style que configura o formulário*/
-        text-align: center;
-        font-family: poppins;
-        font-size: 20px;
-        padding-top: 2.5%; /*espaço entre o texto e o top do formulário*/
+    form{ /*Style que configura o formulário*/
+        width: 90%;
     }
     
-    .cadastro{ /*Caixa que contém todos os elementos do cadastro*/
-        margin-left: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-        margin-right: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-        background-color: white; /*COR DE FUNDO*/
-        width: 55%; /*LARGURA*/
-        height: auto; /*ALTURA*/
-        border-radius: 10px; /*CURVATURA DA BORDA*/
-        border: 2px solid black; /* BORDA */
-        padding-bottom: 3%;
-        padding-top: 2%;
-        margin-top: 5%;
-    }
+    
     
 }
 
@@ -114,20 +108,7 @@ body{
     .col-lg-11{width: 91.66%}
     .col-lg-12{width: 100%}
     
-    .formulario{ /*Style que configura o formulário*/
-        text-align: center;
-        font-family: poppins;
-        font-size: 20px;
-        padding-top: 2.5%; /*espaço entre o texto e o top do formulário*/
-    }
-    
-    .cadastro{ /*Caixa que contém todos os elementos do cadastro*/
-        margin-left: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-        margin-right: auto; /*DEIXA CENTRALIZADO NO MEIO*/
-        background-color: white; /*COR DE FUNDO*/
-        width: 35%; /*LARGURA*/
-        height: auto; /*ALTURA*/
-        border-radius: 10px; /*CURVATURA DA BORDA*/
-        border: 2px solid black; /* BORDA */
+    form{ /*Style que configura o formulário*/
+        width: 85%;
     }
 }
