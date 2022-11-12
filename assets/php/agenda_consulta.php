@@ -15,17 +15,18 @@
 
         if (mysqli_num_rows($result1) == 0){
             #num_rows mosta a qauntidadede linhas;
-            echo "<script> alert ('cpf não existente')</script>";
+            echo "<script> alert ('cpf não cadastrado')</script>";
+            echo "<script> window.location.href='../html/cadastro.php'</script>";
         } else {
             while ($linha = mysqli_fetch_array($result1)){
                 #guardar os dados em índices numéricos na matriz do resultado
 
-                $sql_animal = "SELECT * FROM cadanimal WHERE nome_animal = '$nome_animal' ";
+                $sql_animal = "SELECT * FROM cadanimal WHERE nome_animal = '$nome_animal' AND cpf_dono = '$cpf_dono' ";
                 $result2 = mysqli_query($conexao,$sql_animal);
 
                 if(mysqli_num_rows($result2) == 0){
-                    echo "<script> alert ('animal não existente')</script>";
-
+                    echo "<script> alert ('animal não cadastrado')</script>";
+                    echo "<script> window.location.href='../htmlfun/pag_cadastro_animal.php'</script>";
                 }else {
                     while($linha = mysqli_fetch_array($result2)){
                         

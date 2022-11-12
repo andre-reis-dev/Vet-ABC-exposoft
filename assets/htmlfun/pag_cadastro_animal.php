@@ -39,7 +39,7 @@
         <div class="cadastro col-sm-8 col-md-6 col-lg-4"><!-- Essa div vai conter os cadastros -->
             <form class="formulario" action="../php/cadastro_animal.php" method="post" name="formulario"> <!-- Cria um formulário -->
                 <label>Cpf do dono: </label><br>
-                <input class="resposta" type="text" name="cpf_dono" placeholder="Cpf do Dono" id="nome" ><br><br>
+                <input class="resposta" type="text" name="cpf_dono" placeholder="Cpf do Dono" id="cpf_dono" ><br><br>
 
                 <label>Nome do Animal:</label><br>
                 <input class="resposta" type="text" name="nome_animal" placeholder="Nome do animal"><br><br>
@@ -76,6 +76,10 @@
         <script src="../javascript/toggle_menu.js"></script>
         <script type="text/javascript" src="../javascript/jquery.js "></script>
         <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
-        <script src="../javascript/verificacao_cadastro.js"></script>
+        <script type="text/javascript" src="../javascript/jquery.js "></script>
+        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
+        <script> $(document).ready(function(){
+    $('#cpf_dono').mask('999.999.999-99');
+});</script>
     </body>
 </html>

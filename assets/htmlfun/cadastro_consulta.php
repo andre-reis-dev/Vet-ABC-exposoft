@@ -47,7 +47,7 @@
             <h1>Cadastro de Consulta</h1>
             <p>
                 <label for="Nome">Cpf do dono</label>
-                <input type="text" name="cpf_dono">
+                <input type="text" name="cpf_dono" id="cpf_dono" class="cpf_dono">
             </p>
             <p>
                 <label for="Nome">Nome do Animal</label>
@@ -87,5 +87,10 @@
         </footer>
 
         <script src="../javascript/toggle_menu.js"></script>
+        <script type="text/javascript" src="../javascript/jquery.js "></script>
+        <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
+        <script> $(document).ready(function(){
+    $('#cpf_dono').mask('999.999.999-99');
+});</script>
     </body>
 </html>
