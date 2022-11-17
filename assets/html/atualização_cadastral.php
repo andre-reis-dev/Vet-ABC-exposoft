@@ -39,21 +39,18 @@
         </nav>
         
         <main>
-            <form action="POST">
+            <form action="../php/atualização_cadastral.php" method="POST">
                 <h1>Atualização Cadastral</h1>
                 <div>
-                    <label for="campo1">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo1">Email anterior</label>
+                    <input type="text" name="email">
                 </div>
                 <div>
-                    <label for="campo2">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo2">Email atual</label>
+                    <input type="text" name="novo">
                 </div>
-                <div>
-                    <label for="campo3">Campo a Ser Decidido</label>
-                    <input type="text">
-                </div>
-                <button>Atualizar Cadastro</button>
+                
+                <br><input class="botao" type="submit" name="cad" value="cadastrar">
             </form>
         </main>
 
