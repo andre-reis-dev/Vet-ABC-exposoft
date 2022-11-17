@@ -50,7 +50,7 @@
                     <input type="text" name="novo">
                 </div>
                 
-                <br><input class="botao" type="submit" name="cad" value="cadastrar">
+                <input class="botao" type="submit" name="cad" value="cadastrar">
             </form>
         </main>
 
