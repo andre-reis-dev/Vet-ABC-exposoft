@@ -18,6 +18,7 @@
             <ul id="menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
@@ -29,6 +30,7 @@
             <ul id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
@@ -51,7 +53,7 @@
 
             <input class="botao" type="submit" name="cadastrar" value="Logar"> <!-- botão -->
         </form>
-            
+        
         <footer class="rodape col-sm-12 col-md-12 col-lg-12"> <!-- rodapé -->
             <img src="../img/alcina.jpg" class="logo-alcina">
             <img src="../img/logo-abc.png" class="logo-abc">

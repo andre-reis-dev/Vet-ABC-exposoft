@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../css/style-global.css">
     <link rel="stylesheet" href="../css/rodape.css">
-    <link rel="stylesheet" href="../css/aggenda.css">
+    <link rel="stylesheet" href="../css/stylee-agenda.css">
     <title>Agenda</title>
 </head>
 <body>
@@ -23,6 +23,7 @@
         <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
@@ -32,6 +33,7 @@
         <ul id="menu-mobile">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
@@ -95,17 +97,18 @@
                     }
                 
                 }else{
-                    echo "<link rel='stylesheet' href='../css/style-agenda.css'>";
+                    echo "<link rel='stylesheet' href='../css/style-na-agenda.css'>";
                     echo "<div></div>"; //essa div foi criada para centralizar a div debaixo
-                    echo "<div class='mensagem col-lg-12'><h3>Ops... parece que você não tem nenhuma consulta marcada. Acesse a página de ajuda e saiba como agendar uma consulta clicando <a class='duvida' href='ajuda.html'>aqui.</a></h3>
+                    echo "<div class='mensagem col-lg-12'><h3>Ops... parece que você não tem nenhuma consulta marcada. Acesse a página de ajuda e saiba como agendar uma consulta clicando <a class='duvida' href='ajuda.php'>aqui.</a></h3>
                         <img src='../img/cao.png'>
                     </div>";
+                    echo "<style>.rod{margin:0px;}</style>";
                 }
             }
         }
     ?>
     </div>
-    <footer class="rodape col-sm-12 col-md-12 col-lg-12">
+    <footer class="rodape col-sm-12 col-md-12 col-lg-12 rod">
         <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
         <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
         <div class="info"> <!-- classe onde está armazenado as informações -->

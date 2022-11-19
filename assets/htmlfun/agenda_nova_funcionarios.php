@@ -81,13 +81,16 @@
 
             $conexao=mysqli_connect("localhost","root","","vet-abc"); //leva a conexão ao banco de dados
 
-            $sql = "SELECT * FROM `cadconsulta` WHERE data_consulta LIKE '%-".$escolher."-%'"; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
-        
+            $sql = "SELECT date_format(data_consulta, '%d/%m/%Y'), data_consulta, nome_animal, medico, horas, cpf_dono, tipo_exame FROM cadconsulta WHERE data_consulta LIKE '%-".$escolher."-%' ORDER BY data_consulta ASC "; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
+
             $cont = 0; //variavel que ajuda a separar as colunas
             
             $result=mysqli_query($conexao,$sql); //resultado
 
                 while ($linha = mysqli_fetch_array($result)){
+
+                    $date = $linha['data_consulta'];
+                    $date = implode("/",array_reverse(explode("-",$date))); //troco o - por / no dia e mes
 
                     echo "<style>.images{display:none;}</style>";
 
@@ -96,7 +99,7 @@
                             <div id='top' class='top' onclick='showEvent(".$cont.")'>
                                 <h2>"; //chamo td isso na tela (style) | usa o cont para enviar o valor do parametro n na função do javascript
 
-                    echo $linha['data_consulta']."</h2> 
+                    echo $date."</h2> 
                                 <span class='material-symbols-outlined show-buttons'>expand_more</span>
                                 <hr>
                             </div>

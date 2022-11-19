@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../css/atualização_cadastral.css">
+    <link rel="stylesheet" href="../css/atualizacao_cadastral.css">
     <link rel="stylesheet" href="../css/style-global.css">
     <link rel="stylesheet" href="../css/rodape.css">
     <title>Atualização Cadastral</title>
@@ -22,7 +22,6 @@
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         
         </nav>
@@ -34,26 +33,22 @@
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         
         <main>
-            <form action="POST">
+            <form action="../php/atualizacao_cadastral.php" method="POST">
                 <h1>Atualização Cadastral</h1>
                 <div>
-                    <label for="campo1">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo1">Email anterior</label>
+                    <input type="text" name="email">
                 </div>
                 <div>
-                    <label for="campo2">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo2">Email atual</label>
+                    <input type="text" name="novo">
                 </div>
-                <div>
-                    <label for="campo3">Campo a Ser Decidido</label>
-                    <input type="text">
-                </div>
-                <button>Atualizar Cadastro</button>
+                
+                <input class="botao" type="submit" name="cad" value="cadastrar">
             </form>
         </main>
 

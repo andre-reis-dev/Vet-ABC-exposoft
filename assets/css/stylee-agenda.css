@@ -3,10 +3,14 @@ table {
     margin: 10px;
 }
 
+.rod{
+    margin-top: 160px;
+}
+
 .event-conteiner{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
 }
 
 .first-row {
@@ -97,19 +101,7 @@ main {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-    table {
-        margin: 10px auto;
-    }
-    main {
-        flex-direction: column;
-    }
-    .event-info {
-        margin: 0 auto 10px auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     table{
         margin: 0;
     }
@@ -117,6 +109,28 @@ main {
         flex-direction: column;
     }
     .event-info {
-        margin: 0;
+        margin: 10px auto;
+        width: 90%;
+    }
+    .event-conteiner{
+        margin: auto;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    table {
+        margin: 10px auto;
+    }
+    main {
+        flex-direction: column;
+    }
+    .event-info {
+        margin: 10px auto;
+        width: 90%;
+    }
+    .event-conteiner{
+        margin: auto;
+        grid-template-columns: repeat(3, auto);
     }
 }

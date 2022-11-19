@@ -1,3 +1,13 @@
+<?php
+    include('../php/loginteste.php'); //estou chamando o php que configura o login
+
+    echo "<style>.sair{display:none;}</style>"; //deixar o botão sair invisivel enquanto a pessoa não está logada
+    if(isset($_SESSION['user'])){ //se a pessoa logar aconte:
+        echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
+        echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,8 +29,11 @@
         <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
-            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+            <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+            <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li> 
         </ul>
     
     </nav>
@@ -29,8 +42,11 @@
         <ul id="menu-mobile">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
-            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+            <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+            <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
         </ul>
     </nav>
     

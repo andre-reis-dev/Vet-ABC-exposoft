@@ -48,7 +48,12 @@
                 <input class="resposta" type="text"  name="idade"  placeholder="Idade do animal"><br><br>
         
                 <label>Porte do Animal:</label><br>
-                <input class="resposta" type="text" name="tamanho" placeholder="Tamnho do animal"><br><br>
+                <select>
+                    <option value="Bem Pequeno">Bem Pequeno</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select><br><br>
 
                 <label>Tipo do Animal:</label><br>
                 <input class="resposta" type="text" name="tipo_animal" placeholder="Exemplo: Cachorro"><br><br>

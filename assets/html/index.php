@@ -28,6 +28,7 @@
             <ul id="menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
@@ -40,6 +41,7 @@
             <ul id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
