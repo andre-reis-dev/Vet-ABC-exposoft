@@ -38,6 +38,7 @@
         
         <main>
             <form action="../php/atualizacao_cadastral.php" method="POST">
+            <form action="../php/atualização_cadastral.php" method="POST">
                 <h1>Atualização Cadastral</h1>
                 <div>
                     <label for="campo1">Email anterior</label>
