@@ -1,3 +1,13 @@
+<?php
+    include('../php/loginteste.php'); //estou chamando o php que configura o login
+
+    echo "<style>.sair{display:none;}</style>"; //deixar o botão sair invisivel enquanto a pessoa não está logada
+    if(isset($_SESSION['user'])){ //se a pessoa logar aconte:
+        echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
+        echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/style-glob.css">
+    <link rel="stylesheet" href="../css/style-rodape.css">
     <link rel="stylesheet" href="../css/style-ajudaa.css">
     <title>Vet ABC</title>
 </head>
@@ -19,8 +29,11 @@
         <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
-            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+            <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+            <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li> 
         </ul>
     
     </nav>
@@ -29,8 +42,11 @@
         <ul id="menu-mobile">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
-            <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
+            <li><a class="login-cadastro logout" href="login.php">Login</a></li>
+            <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
+            <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
         </ul>
     </nav>
     
@@ -46,14 +62,18 @@
     </div>
 
     <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-        <img src="../img/alcina.jpg" class="logo-alcina">
-        <img src="../img/logo-abc.png" class="logo-abc">
+        <div class="esquerda">
+            <img src="../img/alcina.jpg" class="logo-alcina">
+        </div>
         <div class="info">
-          <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-          <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-          <p class="r-email">secretaria.alcina@gmail.com</p>
-          <p class="r-tel">(11) 4224-0679</p>
-       </div>
+            <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
+            <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+            <p class="r-email">secretaria.alcina@gmail.com</p>
+            <p class="r-tel">(11) 4224-0679</p>
+        </div>
+        <div class="direita">
+            <img src="../img/abc-lg.png" class="logo-abc">
+        </div>
     </footer>
 
     <script src="../javascript/toggle_menu.js"></script>

@@ -1,7 +1,7 @@
 <?php
-if (isset($_POST["cadastrar_animal"])){ #se o botão 'cadastrar_animal' for apertado aconte: 
+include('conexao.php');
 
-    $conexao=mysqli_connect("localhost","root","","vet-abc"); #cria a conexão com o banco de dados
+if (isset($_POST["cadastrar_animal"])){ #se o botão 'cadastrar_animal' for apertado aconte: 
 
     $cpf_dono = $_POST['cpf_dono']; #cria a váriavel $email e da pra ela o valor do que foi digitado no campo email dono
     $nome_animal=$_POST['nome_animal']; //

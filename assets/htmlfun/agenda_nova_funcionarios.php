@@ -1,4 +1,5 @@
 <?php
+    include('../php/conexao.php');
     include('../php/protecaoAgenda.php'); //inclui o php de proteção da agenda
 ?>
 
@@ -9,9 +10,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-        <link rel="stylesheet" href="../css/style-na-agenda.css">
-        <link rel="stylesheet" href="../css/style-global.css">
-        <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="../css/stylee-na-agenda.css">
+        <link rel="stylesheet" href="../css/style-glob.css">
+        <link rel="stylesheet" href="../css/style-rodape.css">
         
         <title>Agenda</title>
     </head>
@@ -79,15 +80,17 @@
 
             $escolher = $_POST['escolher']; //crio a variavel escolher e jogo dentro dela o valor da opção q foi escolhida (mes selecionado)
 
-            $conexao=mysqli_connect("localhost","root","","vet-abc"); //leva a conexão ao banco de dados
+            $sql = "SELECT date_format(data_consulta, '%d/%m/%Y'), data_consulta, nome_animal, medico, horas, cpf_dono, tipo_exame FROM cadconsulta WHERE data_consulta LIKE '%-".$escolher."-%' ORDER BY data_consulta ASC "; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
 
-            $sql = "SELECT * FROM `cadconsulta` WHERE data_consulta LIKE '%-".$escolher."-%'"; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
-        
             $cont = 0; //variavel que ajuda a separar as colunas
             
             $result=mysqli_query($conexao,$sql); //resultado
 
+            echo "<br><br><br><br>"; //espaço para o rodape ficar na posição certa
                 while ($linha = mysqli_fetch_array($result)){
+
+                    $date = $linha['data_consulta'];
+                    $date = implode("/",array_reverse(explode("-",$date))); //troco o - por / no dia e mes
 
                     echo "<style>.images{display:none;}</style>";
 
@@ -96,7 +99,7 @@
                             <div id='top' class='top' onclick='showEvent(".$cont.")'>
                                 <h2>"; //chamo td isso na tela (style) | usa o cont para enviar o valor do parametro n na função do javascript
 
-                    echo $linha['data_consulta']."</h2> 
+                    echo $date."</h2> 
                                 <span class='material-symbols-outlined show-buttons'>expand_more</span>
                                 <hr>
                             </div>
@@ -139,18 +142,20 @@
             }
         ?>
 
-        <div class="footer">
-            <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-                <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
-                <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
-                <div class="info"> <!-- classe onde estáarmazenado as informações -->
-                    <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-                    <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-                    <p class="r-email">secretaria.alcina@gmail.com</p>
-                    <p class="r-tel">(11) 4224-0679</p>
-                </div>
-            </footer>
-        </div>
+        <footer class="rodape col-sm-12 col-md-12 col-lg-12">
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
+            <div class="info">
+                <p>Escola Municipal Alcina Dantas Feijão</p>
+                <p>Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+                <p>secretaria.alcina@gmail.com</p>
+                <p>(11) 4224-0679</p>
+            </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
+            </div>
+        </footer>
     
         <script src="../javascript/toggle_menu.js"></script>
         <script src="../javascript/show_consultas.js"></script>

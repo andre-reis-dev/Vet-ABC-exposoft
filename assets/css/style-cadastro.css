@@ -7,7 +7,17 @@
     box-sizing: border-box;
 }
 
-
+select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.569);
+}
+.cadastro{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .area-logo{
     background-color: white;

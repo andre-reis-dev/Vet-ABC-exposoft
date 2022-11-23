@@ -1,15 +1,17 @@
 <?php
+    include('conexao.php');
     session_start(); //inicia uma sessão (isso permte saber se está logado ou não)
-    $conexao=mysqli_connect("localhost","root","","vet-abc"); //leva a conexão até o banco de dados
+     //leva a conexão até o banco de dados
     
     if(isset($_POST['email']) || isset($_POST['senha'])){ //esse email e senha é do html
 
         if(strlen($_POST['email']) == 0 ){ //caso a pessoa não tenha digitado nada aparecera isso
             echo "<script> alert('Preencha seu e-mail')</script>";
-            header("Location: ../html/login.php");
+            echo "<script> window.location='../html/login.php'</script>";
 
         }else if(strlen($_POST['senha']) == 0 ){ // caso a pessoa não tenha digitado nehnhuma senha aparece isso
             echo "<script> alert('Preencha sua senha')</script>";
+            echo "<script> window.location='../html/login.php'</script>";
 
         }else{// se a pessoa digitou td certinho vai seguir o código abaixo
             $email = $_POST['email'];
@@ -35,6 +37,7 @@
                 }
             }
             echo "<script> alert('Falha ao logar! E-mail ou senha incorretos') </script>"; //se a pessoa digitou algo errado aparece um alert
+            echo "<script> window.location='../html/login.php'</script>";
         }
     }
 

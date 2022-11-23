@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../css/atualização_cadastral.css">
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/atualizacao_cadastral.css">
+    <link rel="stylesheet" href="../css/style-glob.css">
+    <link rel="stylesheet" href="../css/style-rodape.css">
     <title>Atualização Cadastral</title>
 </head>
 <body>
@@ -22,7 +22,6 @@
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         
         </nav>
@@ -34,38 +33,38 @@
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
         
         <main>
-            <form action="POST">
+            <form action="../php/atualizacao_cadastral.php" method="POST">
                 <h1>Atualização Cadastral</h1>
                 <div>
-                    <label for="campo1">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo1">Email anterior</label>
+                    <input type="text" name="email">
                 </div>
                 <div>
-                    <label for="campo2">Campo a Ser Decidido</label>
-                    <input type="text">
+                    <label for="campo2">Email atual</label>
+                    <input type="text" name="novo">
                 </div>
-                <div>
-                    <label for="campo3">Campo a Ser Decidido</label>
-                    <input type="text">
-                </div>
-                <button>Atualizar Cadastro</button>
+                
+                <input class="botao" type="submit" name="cad" value="cadastrar">
             </form>
         </main>
 
         <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-            <img src="../img/alcina.jpg" class="logo-alcina">
-            <img src="../img/logo-abc.png" class="logo-abc">
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
             <div class="info">
-              <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-              <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-              <p class="r-email">secretaria.alcina@gmail.com</p>
-              <p class="r-tel">(11) 4224-0679</p>
-           </div>
+                <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
+                <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+                <p class="r-email">secretaria.alcina@gmail.com</p>
+                <p class="r-tel">(11) 4224-0679</p>
+            </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
+            </div>
         </footer>
     </div>
 

@@ -4,11 +4,11 @@
          <title>Quem somos</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- aparecer o sinal do menu para celular -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- da uma limitação pro site -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com navegadores-->
-    <link rel="stylesheet" href="../css/style-quemsomos.css" > 
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- da uma limitação pro site -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com navegadores-->
+        <link rel="stylesheet" href="../css/style-qmsomos.css" > 
+        <link rel="stylesheet" href="../css/style-glob.css">
+        <link rel="stylesheet" href="../css/style-rodape.css">
 </head>
     
     <body>
@@ -42,7 +42,7 @@
 
         <div class="caixote"><!-- armazena todas as caixinhas -->
             <!-- ANDRÉ -->
-            <div class="box-andre col-sm-8 col-md-6 col-lg-3"> <!--  toda a caxinha-->
+            <div class="box-andre col-sm-8 col-md-6 col-lg-4"> <!--  toda a caxinha-->
                 <div class="cor-foto-a box-andre col-sm-12 col-md-12 col-lg-12"> </div> <!-- barrinha verde da caixinha -->
                 <div  class="foto-a" style="background-image: url(../img/andr%C3%A9.jpg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto"><!-- div de texto -->
@@ -57,7 +57,7 @@
             </div>
 
             <!-- BÁRBARA -->
-            <div class="box-barbara col-sm-8 col-md-6 col-lg-3"><!--  toda a caxinha-->
+            <div class="box-barbara col-sm-8 col-md-6 col-lg-4"><!--  toda a caxinha-->
                 <div class="cor-foto-b box-andre col-sm-12 col-md-12 col-lg-12"> </div><!-- barrinha verde da caixinha -->
                 <div  class="foto-b" style="background-image: url(../img/barbara.jpeg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto">
@@ -72,7 +72,7 @@
             </div>
 
             <!-- CAMILA -->
-            <div class="box-camila col-sm-8 col-md-6 col-lg-3"><!--  toda a caxinha-->
+            <div class="box-camila col-sm-8 col-md-6 col-lg-4"><!--  toda a caxinha-->
                 <div class="cor-foto-c box-andre col-sm-12 col-md-12 col-lg-12"> </div><!-- barrinha verde da caixinha -->
                 <div  class="foto-c" style="background-image: url(../img/camila.jpg)"></div><!-- bolinha que contém imagem -->
                 <div class="texto">
@@ -90,14 +90,18 @@
         
         </div>
 
-        <footer class="rodape col-sm-12 col-md-12 col-lg-12"> <!-- rodapé -->
-            <img src="../img/alcina.jpg" class="logo-alcina">
-            <img src="../img/logo-abc.png" class="logo-abc">
+        <footer class="rodape col-sm-12 col-md-12 col-lg-12">
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
             <div class="info">
-                <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-                <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-                <p class="r-email">secretaria.alcina@gmail.com</p>
-                <p class="r-tel">(11) 4224-0679</p>
+                <p>Escola Municipal Alcina Dantas Feijão</p>
+                <p>Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+                <p>secretaria.alcina@gmail.com</p>
+                <p>(11) 4224-0679</p>
+            </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
             </div>
         </footer>
         

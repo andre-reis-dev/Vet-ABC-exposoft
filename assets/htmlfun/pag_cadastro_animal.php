@@ -5,8 +5,8 @@
         <meta name="viewport" charset="utf-8"> <!-- IMG DO TRIBAR -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="../css/style-cadastro.css">
-        <link rel="stylesheet" href="../css/style-global.css">
-        <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="../css/style-glob.css">
+        <link rel="stylesheet" href="../css/style-rodape.css">
     </head>
     <body>       
         <header class="area-logo"><!-- Aqui fica a logo da página -->
@@ -48,7 +48,12 @@
                 <input class="resposta" type="text"  name="idade"  placeholder="Idade do animal"><br><br>
         
                 <label>Porte do Animal:</label><br>
-                <input class="resposta" type="text" name="tamanho" placeholder="Tamnho do animal"><br><br>
+                <select>
+                    <option value="Bem Pequeno">Bem Pequeno</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select><br><br>
 
                 <label>Tipo do Animal:</label><br>
                 <input class="resposta" type="text" name="tipo_animal" placeholder="Exemplo: Cachorro"><br><br>
@@ -63,23 +68,30 @@
             </form>
         </div>
 
-        <footer class="rodape col-sm-12 col-md-12 col-lg-12"> <!-- rodapé -->
-            <img src="../img/alcina.jpg" class="logo-alcina">
-            <img src="../img/logo-abc.png" class="logo-abc">
+        <footer class="rodape col-sm-12 col-md-12 col-lg-12">
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
             <div class="info">
                 <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
                 <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
                 <p class="r-email">secretaria.alcina@gmail.com</p>
                 <p class="r-tel">(11) 4224-0679</p>
             </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
+            </div>
         </footer>
+
         <script src="../javascript/toggle_menu.js"></script>
         <script type="text/javascript" src="../javascript/jquery.js "></script>
         <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
         <script type="text/javascript" src="../javascript/jquery.js "></script>
         <script type="text/javascript" src="../javascript/jquerycfp.js"></script> 
-        <script> $(document).ready(function(){
-    $('#cpf_dono').mask('999.999.999-99');
-});</script>
+        <script> 
+            $(document).ready(function(){
+                $('#cpf_dono').mask('999.999.999-99');
+            });
+        </script>
     </body>
 </html>

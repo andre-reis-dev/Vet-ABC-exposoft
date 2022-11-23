@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style-global.css">
-        <link rel="stylesheet" href="../css/rodape.css">
+        <link rel="stylesheet" href="../css/style-glob.css">
+        <link rel="stylesheet" href="../css/style-rodape.css">
         <link rel="stylesheet" href="../css/cad_consultas.css">
         <title>Cadastro de Consultas</title>
     </head>
@@ -76,13 +76,17 @@
         </form>
 
         <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-            <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
-            <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
-            <div class="info"> <!-- classe onde estáarmazenado as informações -->
-                <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-                <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-                <p class="r-email">secretaria.alcina@gmail.com</p>
-                <p class="r-tel">(11) 4224-0679</p>
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
+            <div class="info">
+                <p>Escola Municipal Alcina Dantas Feijão</p>
+                <p>Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+                <p>secretaria.alcina@gmail.com</p>
+                <p>(11) 4224-0679</p>
+            </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
             </div>
         </footer>
 
