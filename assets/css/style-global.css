@@ -30,9 +30,6 @@ header {
     display: flex; /*define o display do elemento como flex, o que habilita diversas configurações compatíveis apenas com display flex*/
     justify-content: center; /*alinha os elementos dentro de um box com display flex para o centro no eixo x. É uma das configurações exclusivas do display flex.*/
 }
-.page-top {
-    height: 50vh; /*vh = Viewport Heigth, ou seja, altura da viewport (tela do dispositivo). 50vh = 50% da altura da viewport*/
-}
 nav {
     background: linear-gradient(180deg, #00966c, #00ce94); /*aplica um gradiente no fundo do elemento. Vale lembrar que essa configuração só é aplicável nas propriedades "background" e "background-image"*/
     padding: 10px;
@@ -52,20 +49,30 @@ a {
 .main-nav-bar {
     display: none;
 }
+.nav-menu-mobile {
+    text-align: center;
+}
 #menu-mobile {
     display: none;
     overflow: hidden;
     animation-duration: .5s;
     animation-fill-mode: forwards; /*faz com que, ao final da animação, a configuração final da animação seja aplicada de forma definitiva ao elemento, evitando que ele volte à sua configuração inicial no final da animação*/
 }
+#menu-mobile > li {
+    padding: 5px 0px;
+}
 .start-page {
     background-image: url(../img/veterinario.jpg);
-    height: 80%;
+    height: 50vh;
     background-repeat: no-repeat; /*impossibilita que a imagem de fundo do elemento se repita por toda a extensão do elemento*/
-    background-size: 100%; /*define que a imagem de fundo ocupara todo o espaço do elemento*/
+    background-size: cover; /*define que a imagem de fundo ocupara todo o espaço do elemento*/
 }
 .links {
     display: none;
+}
+
+#first-row > img {
+    margin-top: 0px;
 }
 
 .row {
@@ -103,9 +110,8 @@ a {
 
 .start-page-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: 78%;
 }
 
 @media only screen and (min-width:600px) {
@@ -144,11 +150,12 @@ a {
     #menu li:not(:last-child) { /*as configurações feitas a seguir serão aplicadas a todas as li's, exceto a última*/
         margin-right: 15px;
     }
-    .page-top {
-        height: 70vh;
+    .start-page-container {
+        height: 80vh;
+        background-color: rgb(189, 255, 217);
     }
     .start-page {
-        height: 100%;
+        height: 80vh;
     }
 
     .login-cadastro {
@@ -199,7 +206,7 @@ a {
     }
     
     #first-row > img {
-        margin-top: 150px;
+        margin-top: 90px;
     }
 
     .start-page-container {
@@ -224,22 +231,19 @@ a {
     .start-page-container {
         flex-direction: row;
         overflow: hidden;
-        z-index: 2;
+        background-image: none;
     }
 
-    .page-top {
-        background-color: #00ce94;
-        height: 90vh;
-    }
     .start-page {
-        max-height: 91%;
+        height: 90vh;
     }
 
     .links {
         align-items: center;
         flex-direction: column;
         justify-self: end;
-        z-index: 1;
+        background-color: transparent;
+        background-color: #00ce94;
     }
     .links > div {
         width: 30%;
@@ -252,9 +256,6 @@ a {
     .row:not(#first-row) {
         flex-direction: row-reverse; /*diz que a direção do flex será em linha, porém invertendo as posições dos elementos*/
     }
-    #first-row > img {
-        margin-top: 0px;
-    }
     .row > div > h2 {
         text-align: center;
         font-size: 2rem; /*1rem é igual ao tamanho padrão da fonte da raiz(root) do documento, normalmente 16px, portanto 1rem equivale a 16px*/
@@ -262,6 +263,6 @@ a {
 
     .row > div > p {
         text-align: justify;
-        font-size: 1rem; 
+        font-size: 1.2rem; 
     }
 }

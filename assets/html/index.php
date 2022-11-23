@@ -6,7 +6,7 @@
         echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
         echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
     }
-?>
+?> 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -48,28 +48,28 @@
                 <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
-        
-        <div class="start-page-container">
-            <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
-            <div class="links">
-                <div class="box-agenda col-md-2 col-lg-2">
-                    <a href="../html/agenda.php">
-                        <h2>Consulta</h2>
-                        <img src="../img/agenda.png" alt="">
-                    </a>
-                </div>
-                <div class="box-sobre col-md-2 col-lg-2">
-                    <a href="../html/quemsomos.php">
-                        <h2>Sobre</h2>
-                        <img src="../img/grupo-fundo-branco.png" alt="">
-                    </a>
-                </div>
-                <div class="box-login col-md-2 col-lg-2">
-                    <a href="../html/cadastro.php">
-                        <h2>Cadastro</h2>
-                        <img src="../img/cadastro.png" alt="">
-                    </a>
-                </div>
+    </div>
+
+    <div class="start-page-container">
+        <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
+        <div class="links">
+            <div class="box-agenda col-md-2 col-lg-2">
+                <a href="../html/agenda.php">
+                    <h2>Consulta</h2>
+                    <img src="../img/agenda.png" alt="">
+                </a>
+            </div>
+            <div class="box-sobre col-md-2 col-lg-2">
+                <a href="../html/quemsomos.php">
+                    <h2>Sobre</h2>
+                    <img src="../img/grupo-fundo-branco.png" alt="">
+                </a>
+            </div>
+            <div class="box-login col-md-2 col-lg-2">
+                <a href="../html/cadastro.php">
+                    <h2>Cadastro</h2>
+                    <img src="../img/cadastro.png" alt="">
+                </a>
             </div>
         </div>
     </div>
