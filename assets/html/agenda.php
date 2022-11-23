@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../css/style-glob.css">
     <link rel="stylesheet" href="../css/style-rodape.css">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/rodape.css">
     <link rel="stylesheet" href="../css/stylee-agenda.css">
     <title>Agenda</title>
 </head>
@@ -148,11 +150,11 @@
         }
     ?>
     </div>
-    <footer class="rod rodape col-sm-12 col-md-12 col-lg-12">
-        <div class="esquerda">
-            <img src="../img/alcina.jpg" class="logo-alcina">
-        </div>
-        <div class="info">
+    
+    <footer class="rodape col-sm-12 col-md-12 col-lg-12 rod">
+        <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
+        <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
+        <div class="info"> <!-- classe onde está armazenado as informações -->
             <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
             <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
             <p class="r-email">secretaria.alcina@gmail.com</p>

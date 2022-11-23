@@ -53,11 +53,10 @@
 
             <input class="botao" type="submit" name="cadastrar" value="Logar"> <!-- botão -->
         </form>
-        
-        <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-            <div class="esquerda">
-                <img src="../img/alcina.jpg" class="logo-alcina">
-            </div>
+
+        <footer class="rodape col-sm-12 col-md-12 col-lg-12"> <!-- rodapé -->
+            <img src="../img/alcina.jpg" class="logo-alcina">
+            <img src="../img/logo-abc.png" class="logo-abc">
             <div class="info">
                 <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
                 <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>

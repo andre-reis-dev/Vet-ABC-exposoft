@@ -82,6 +82,8 @@
 
             $sql = "SELECT date_format(data_consulta, '%d/%m/%Y'), data_consulta, nome_animal, medico, horas, cpf_dono, tipo_exame FROM cadconsulta WHERE data_consulta LIKE '%-".$escolher."-%' ORDER BY data_consulta ASC "; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
 
+            $sql = "SELECT date_format(data_consulta, '%d/%m/%Y'), data_consulta, nome_animal, medico, horas, cpf_dono, tipo_exame FROM cadconsulta WHERE data_consulta LIKE '%-".$escolher."-%' ORDER BY data_consulta ASC "; //seleciona o nome do cadastro consulta onde o nascimento do animal é da variavel escolher
+
             $cont = 0; //variavel que ajuda a separar as colunas
             
             $result=mysqli_query($conexao,$sql); //resultado

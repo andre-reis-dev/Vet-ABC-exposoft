@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/atualizacao_cadastral.css">
     <link rel="stylesheet" href="../css/style-glob.css">
     <link rel="stylesheet" href="../css/style-rodape.css">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/rodape.css">
     <title>Atualização Cadastral</title>
 </head>
 <body>
@@ -38,6 +40,7 @@
         
         <main>
             <form action="../php/atualizacao_cadastral.php" method="POST">
+            <form action="../php/atualização_cadastral.php" method="POST">
                 <h1>Atualização Cadastral</h1>
                 <div>
                     <label for="campo1">Email anterior</label>
