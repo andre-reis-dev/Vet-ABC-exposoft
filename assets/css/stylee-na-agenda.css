@@ -24,17 +24,6 @@ body{
     text-align: center;
 }
 
-.duvida{
-    color: rgb(47, 134, 29);
-    text-decoration: underline;
-}
-
-.mensagem{
-    margin:50px auto;
-    width: 85%;
-    text-align: center;
-}
-
 img{
     width: 400px;
 }

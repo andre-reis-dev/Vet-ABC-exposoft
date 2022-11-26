@@ -14,7 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"><!-- IMG DO TRIBAR -->
         <link rel="stylesheet" href="../css/style-rodape.css">
-        <link rel="stylesheet" href="../css/style-qmsomos.css">
+        <link rel="stylesheet" href="../css/style-qemsomos.css">
         <link rel="stylesheet" href="../css/style-glob.css">
     </head>
     
