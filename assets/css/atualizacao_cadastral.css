@@ -9,7 +9,10 @@ h1 {
 }
 
 form {
-    margin: 30px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 120px;
     width: 95%;
     height: fit-content;
     text-align: center;
@@ -28,7 +31,7 @@ input {
     border-bottom: 1px solid #002f22;
     width: 100%;
 }
-button {
+.botao {
     background-color: #00966c;
     border: none;
     width: 80%;
@@ -42,7 +45,7 @@ button {
     margin-top: 20px;
     margin-bottom: 31px;
 }
-button:hover {
+.botao:hover {
     background-color: #017655;
 }
 
@@ -50,7 +53,7 @@ button:hover {
     form {
         width: 90%;
     }
-    button {
+    .botao {
         margin-bottom: 70px;
     }
 }

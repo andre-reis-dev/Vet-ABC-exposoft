@@ -14,8 +14,12 @@ body{
     background-color: #F5FFFA;
 }
 
+.caixote{
+    margin-bottom: 50px;
+}
+
 /* LETRAS DO SITE */
-p {
+.caixote p{
     font-family: 'poppins' ,'display';
     padding: 10px;
     text-indent: 20px;
@@ -248,13 +252,14 @@ p {
         display: flex; /* flexivel- deixar alinhado */
         justify-content: center; /* centralizar os elementos */
         margin-top: 3%; /* top e bottom serve par adar um espaço entre as boxs e o rodapé */
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
 
     .box-andre{ /* box andré é toda a caixa que sera armazenado as informações referentes ao andré- a caixa toda */
-       background-color: #e6f5f0;
+        background-color: #e6f5f0;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         border-radius: 10px;
+        margin: 10px;
     }
     
     .cor-foto-a{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
@@ -274,7 +279,8 @@ p {
     .box-barbara{ /* box bárbara é toda a caixa que será armazenado as informações referentes a bárbara- a caixa toda */
         background-color: #e6f5f0;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-        border-radius: 10px;  
+        border-radius: 10px; 
+        margin: 10px; 
     }
     .cor-foto-b{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
         height: 80px;
@@ -294,6 +300,7 @@ p {
         background-color: #e6f5f0;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         border-radius: 10px;
+        margin: 10px;
     }
     .cor-foto-c{ /* é a div que contem apenas a faixa verde que está na parte de trás da foto */
         height: 80px;

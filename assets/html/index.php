@@ -6,7 +6,7 @@
         echo "<style>.logout{display:none;}</style>"; // deixa btns de cadastro e login invisiveis
         echo "<style>.sair{display:block;}</style>"; // deixa visivel o btn sair
     }
-?>
+?> 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/style-glob.css">
+    <link rel="stylesheet" href="../css/style-rodape.css">
     <title>Vet ABC</title>
 </head>
 <body>
@@ -28,6 +28,7 @@
             <ul id="menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
@@ -40,34 +41,35 @@
             <ul id="menu-mobile">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="agenda.php">Consulta</a></li>
+                <li><a href="ajuda.php">Dúvidas</a></li>
                 <li><a href="quemsomos.php">Quem Somos</a></li>
                 <li><a class="login-cadastro logout" href="login.php">Login</a></li>
                 <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
                 <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
-        
-        <div class="start-page-container">
-            <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
-            <div class="links">
-                <div class="box-agenda col-md-2 col-lg-2">
-                    <a href="../html/agenda.php">
-                        <h2>Consulta</h2>
-                        <img src="../img/agenda.png" alt="">
-                    </a>
-                </div>
-                <div class="box-sobre col-md-2 col-lg-2">
-                    <a href="../html/quemsomos.php">
-                        <h2>Sobre</h2>
-                        <img src="../img/grupo-fundo-branco.png" alt="">
-                    </a>
-                </div>
-                <div class="box-login col-md-2 col-lg-2">
-                    <a href="../html/cadastro.php">
-                        <h2>Cadastro</h2>
-                        <img src="../img/cadastro.png" alt="">
-                    </a>
-                </div>
+    </div>
+
+    <div class="start-page-container">
+        <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
+        <div class="links">
+            <div class="box-agenda col-md-2 col-lg-2">
+                <a href="../html/agenda.php">
+                    <h2>Consulta</h2>
+                    <img src="../img/agenda.png" alt="">
+                </a>
+            </div>
+            <div class="box-sobre col-md-2 col-lg-2">
+                <a href="../html/quemsomos.php">
+                    <h2>Sobre</h2>
+                    <img src="../img/grupo-fundo-branco.png" alt="">
+                </a>
+            </div>
+            <div class="box-login col-md-2 col-lg-2">
+                <a href="../html/cadastro.php">
+                    <h2>Cadastro</h2>
+                    <img src="../img/cadastro.png" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -91,15 +93,19 @@
     </main>
 
     <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-        <img src="../img/alcina.jpg" class="logo-alcina">
-        <img src="../img/logo-abc.png" class="logo-abc">
-        <div class="info">
-          <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
-          <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
-          <p class="r-email">secretaria.alcina@gmail.com</p>
-          <p class="r-tel">(11) 4224-0679</p>
-       </div>
-    </footer>
+            <div class="esquerda">
+                <img src="../img/alcina.jpg" class="logo-alcina">
+            </div>
+            <div class="info">
+                <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
+                <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
+                <p class="r-email">secretaria.alcina@gmail.com</p>
+                <p class="r-tel">(11) 4224-0679</p>
+            </div>
+            <div class="direita">
+                <img src="../img/abc-lg.png" class="logo-abc">
+            </div>
+        </footer>
 
     <script src="../javascript/toggle_menu.js"></script>
 </body>

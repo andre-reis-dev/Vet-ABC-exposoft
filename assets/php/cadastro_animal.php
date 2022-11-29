@@ -1,7 +1,7 @@
 <?php
-if (isset($_POST["cadastrar_animal"])){ #se o botão 'cadastrar_animal' for apertado aconte: 
+include('conexao.php');
 
-    $conexao=mysqli_connect("localhost","root","","vet-abc"); #cria a conexão com o banco de dados
+if (isset($_POST["cadastrar_animal"])){ #se o botão 'cadastrar_animal' for apertado aconte: 
 
     $cpf_dono = $_POST['cpf_dono']; #cria a váriavel $email e da pra ela o valor do que foi digitado no campo email dono
     $nome_animal=$_POST['nome_animal']; //
@@ -28,12 +28,12 @@ if (isset($_POST["cadastrar_animal"])){ #se o botão 'cadastrar_animal' for aper
         if($quantidade2 != 0){
             echo "<script> alert('Animal já cadastrado')</script>";
             echo "<script> window.location.href='../htmlfun/cadastro_consulta.php'</script>";}
-            else{ // se já tiver um email segue o cadastro normalmente
-                $sql= "INSERT INTO cadanimal (nome_animal, idade, tamanho, tipo_animal, raca, cpf_dono) VALUES ('$nome_animal','$idade', '$tamanho','$tipo_animal','$raca','$cpf_dono')";
-                
-                    $result=mysqli_query($conexao,$sql);
-                    echo "<script> window.location='../htmlfun/cadastro_consulta.php'</script>";
-                }
+        else{ // se já tiver um email segue o cadastro normalmente
+            $sql= "INSERT INTO cadanimal (nome_animal, idade, tamanho, tipo_animal, raca, cpf_dono) VALUES ('$nome_animal','$idade', '$tamanho','$tipo_animal','$raca','$cpf_dono')";
+            
+                $result=mysqli_query($conexao,$sql);
+                echo "<script> window.location='../htmlfun/cadastro_consulta.php'</script>";
+            }
         
     }
 }

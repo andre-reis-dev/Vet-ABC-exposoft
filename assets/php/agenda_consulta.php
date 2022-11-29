@@ -1,7 +1,8 @@
 <?php
+    include('conexao.php');
+
     if (isset($_POST["agendar"])) {
 
-        $conexao = mysqli_connect("localhost","root","","vet-abc");
         $nome_animal = $_POST['nome_animal'];
         $cpf_dono = $_POST['cpf_dono'];
         $medico = $_POST['medico'];

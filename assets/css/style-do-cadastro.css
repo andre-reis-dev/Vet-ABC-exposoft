@@ -6,8 +6,28 @@
 *{
     box-sizing: border-box;
 }
-
-
+.email{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    transition: .3s;
+}
+select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.569);
+}
+.cadastro{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .area-logo{
     background-color: white;

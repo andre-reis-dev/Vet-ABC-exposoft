@@ -1,4 +1,5 @@
 <?php
+    include('../php/conexao.php');
     include('../php/protecaoAgenda.php');
 ?>
 <!DOCTYPE html>
@@ -8,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="../css/style-global.css">
-    <link rel="stylesheet" href="../css/rodape.css">
-    <link rel="stylesheet" href="../css/aggenda.css">
+    <link rel="stylesheet" href="../css/style-glob.css">
+    <link rel="stylesheet" href="../css/style-rodape.css">
+    <link rel="stylesheet" href="../css/style-agenda-cl.css">
     <title>Agenda</title>
 </head>
 <body>
@@ -23,6 +24,7 @@
         <ul id="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
@@ -32,6 +34,7 @@
         <ul id="menu-mobile">
             <li><a href="index.php">Home</a></li>
             <li><a href="agenda.php">Consulta</a></li>
+            <li><a href="ajuda.php">Dúvidas</a></li>
             <li><a href="quemsomos.php">Quem Somos</a></li>
             <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
         </ul>
@@ -39,13 +42,13 @@
     <div class='event-conteiner'>
 
     <?php
+
         if(!isset($_SESSION)){ //inicia a sessão
             session_start();
         }
         
         if(isset($_SESSION['user'])){
 
-            $conexao = mysqli_connect("localhost","root","","vet-abc");
             $sql_email = "SELECT * FROM `cadastro` WHERE email LIKE '".$_SESSION['user']."'";//seleciono o cpf do email do usuário
             $resulta_email = mysqli_query($conexao,$sql_email); //faço a ação
 
@@ -56,7 +59,46 @@
                 $resulta_cpf = mysqli_query($conexao,$sql_pesquisa); //faço a ação
                 $numero_linhas = mysqli_num_rows($resulta_cpf);
                 
-                if($numero_linhas != 0){
+                if($numero_linhas != 0 && $numero_linhas <= 3){
+                    while ($linha = mysqli_fetch_array($resulta_cpf)){
+
+                    $data = $linha['data_consulta'];
+                    $data = implode("/",array_reverse(explode("-",$data)));
+
+                    echo "<main>
+                        <div class='event-info col-sm-12 col-md-11 col-lg-12'>
+                            <div class='title'>
+                                <h1>Consulta ".$data."</h1>
+                            </div>
+                            <div class='event-content'>
+                                <div>
+                                    <h3>Nome do Cliente</h3>
+                                    <span>".$linha1['nome']."</span>
+                                </div>
+                                <div>
+                                    <h3>Nome do Animal</h3>
+                                    <span>".$linha['nome_animal']."</span>
+                                </div>
+                                <div>
+                                    <h3>Nome do Profissional</h3>
+                                    <span>".$linha['medico']."</span>
+                                </div>
+                                <div>
+                                    <h3>Horário da Consulta </h3>
+                                    <span><span class='material-symbols-outlined clock'> schedule </span>".$linha['horas']."</span>
+                                </div>
+                                <div>
+                                    <h3>Sobre a Consulta:</h3>
+                                    <span>".$linha['tipo_exame']."</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </main>";
+                    echo "<br>";
+                    }
+
+                }else if($numero_linhas > 3){
                     while ($linha = mysqli_fetch_array($resulta_cpf)){
 
                         $data = $linha['data_consulta'];
@@ -95,24 +137,29 @@
                     }
                 
                 }else{
-                    echo "<link rel='stylesheet' href='../css/style-agenda.css'>";
+                    echo "<link rel='stylesheet' href='../css/style-na-agenda.css'>";
                     echo "<div></div>"; //essa div foi criada para centralizar a div debaixo
-                    echo "<div class='mensagem col-lg-12'><h3>Ops... parece que você não tem nenhuma consulta marcada. Acesse a página de ajuda e saiba como agendar uma consulta clicando <a class='duvida' href='ajuda.html'>aqui.</a></h3>
-                        <img src='../img/cao.png'>
+                    echo "<div class='mensagem col-lg-12'><h3>Ops... parece que você não tem nenhuma consulta marcada. Acesse a página de ajuda e saiba como agendar uma consulta clicando <a class='duvida' href='ajuda.php'>aqui.</a></h3>
+                        <img class='cao' src='../img/cao.png'>
                     </div>";
+                    echo "<style>.rod{margin:0px;}</style>";
                 }
             }
         }
     ?>
     </div>
-    <footer class="rodape col-sm-12 col-md-12 col-lg-12">
-        <img src="../img/alcina.jpg" class="logo-alcina col-sm-12 col-md-12 col-lg-12"><!-- imagem alcina -->
-        <img src="../img/logo-abc.png" class="logo-abc"><!-- imagem abc -->
-        <div class="info"> <!-- classe onde está armazenado as informações -->
+    <footer class="rod rodape col-sm-12 col-md-12 col-lg-12">
+        <div class="esquerda">
+            <img src="../img/alcina.jpg" class="logo-alcina">
+        </div>
+        <div class="info">
             <p class="r-name">Escola Municipal Alcina Dantas Feijão</p>
             <p class="r-endereco">Rua Capivari nº 500 - Bairro Mauá - São Caetano do Sul - SP</p>
             <p class="r-email">secretaria.alcina@gmail.com</p>
             <p class="r-tel">(11) 4224-0679</p>
+        </div>
+        <div class="direita">
+            <img src="../img/abc-lg.png" class="logo-abc">
         </div>
     </footer>
     

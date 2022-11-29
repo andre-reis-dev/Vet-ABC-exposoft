@@ -11,11 +11,11 @@
 
 <?php
 
+    include('conexao.php');
+
     if(!isset($_SESSION)){ //inicia a sessão
         session_start();
     }
-
-    $conexao=mysqli_connect("localhost","root","","vet-abc"); //leva a conexão ao banco de dados
 
     $sql = "SELECT * FROM `cadconsulta` WHERE nasc_animal LIKE '%-06-%'"; //seleciona o nome do cadastro consulta onde o nascimento do animal é em outubro (-10-)
 

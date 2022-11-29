@@ -1,7 +1,7 @@
 <?php
+include('conexao.php');
 
 if (isset($_POST["cadastrar"])){
-    $conexao=mysqli_connect("localhost","root","","vet-abc");
     $nome=$_POST['nome'];
     $cpf=$_POST['cpf'];
     $telefone=$_POST['telefone'];
@@ -38,8 +38,9 @@ if (isset($_POST["cadastrar"])){
             $sql_cpf = "SELECT * FROM cadastro WHERE cpf = '$cpf'";
             $result2 = mysqli_query($conexao,$sql_cpf);
             if(mysqli_num_rows($result2) != 0){
-                echo "<script> alert (' cpf ja cadastrado, cadastrar novo email')</script>"; }
-              else {         
+                echo "<script> alert (' cpf ja cadastrado, cadastrar novo email')</script>"; 
+                echo "<script> window.location.href= '../html/atualização_cadastral.php'</script>"; 
+            }else {         
               $sql=" INSERT INTO cadastro(nome, cpf, telefone, email, senha) VALUES ('$nome', '$cpf','$telefone', '$email', '$senha')";
             $result=mysqli_query($conexao,$sql);
             echo "<script> window.location.href=' ../html/login.php'</script>"; }
