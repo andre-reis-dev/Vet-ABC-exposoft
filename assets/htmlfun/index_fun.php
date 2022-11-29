@@ -75,7 +75,7 @@
             <img class="col-sm-8 col-md-7 col-lg-4" src="../img/pet-buldog.jpg" alt="">
             <div class="row-content">
                 <h2 class="col-sm-12 col-md-12 col-lg-12">Somos uma Empresa com Valores</h2>
-                <p class="col-sm-12 col-md-10 col-lg-8">A <strong>Vet ABC</strong> presa pela segurança do pet, pela qualidade no seu atendimento, e pelo bem-estar do pet. Damos máxima importância para a confiança do cliente em nós.</p>
+                <p class="col-sm-12 col-md-10 col-lg-8">A <strong>Vet ABC</strong> preza pela segurança do pet, pela qualidade no seu atendimento, e pelo bem-estar do pet. Damos máxima importância para a confiança do cliente em nós.</p>
             </div>
         </div>
         <hr>
