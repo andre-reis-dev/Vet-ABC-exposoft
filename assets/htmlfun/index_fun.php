@@ -23,32 +23,28 @@
         <img class="col-sm-5 col-md-3 col-lg-2" src="../img/logo.png" alt="logo da empresa vet abc">
     </header>
 
-    <div class="page-top">
-        <nav class="main-nav-bar">
+    <nav class="main-nav-bar"><!-- Essa nav vai conter o MENU -->
+            <span class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</span>
             <ul id="menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="agenda.php">Consulta</a></li>
-                <li><a href="ajuda.php">Dúvidas</a></li>
-                <li><a href="quemsomos.php">Quem Somos</a></li>
-                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
-                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li> 
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
-        
         </nav>
         <nav class="nav-menu-mobile">
             <label for="three-bars" id="three-bars" class="material-symbols-outlined three-bars col-sm-2" onclick="toggleMenu()">menu</label>
             <ul id="menu-mobile">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="agenda.php">Consulta</a></li>
-                <li><a href="ajuda.php">Dúvidas</a></li>
-                <li><a href="quemsomos.php">Quem Somos</a></li>
-                <li><a class="login-cadastro logout" href="login.php">Login</a></li>
-                <li><a class="login-cadastro logout" href="cadastro.php">Cadastro</a></li>
-                <li><a class="login-cadastro sair" href="../php/logout.php">Sair</a></li>
+                <li><a href="index_fun.php">Home</a></li>
+                <li><a href="quemsomos_funcionarios.php">Quem Somos</a></li>
+                <li><a href="agenda_nova_funcionarios.php">Agenda</a></li>
+                <li><a href="cadastro_consulta.php">Agendar Consulta</a></li>
+                <li><a href="pag_cadastro_animal.php">Cadastrar Animal</a></li>
+                <li><a class="login-cadastro" href="../php/logout.php">Sair</a></li>
             </ul>
         </nav>
-    </div>
 
     <div class="start-page-container">
         <div class="start-page col-sm-12 col-md-12 col-lg-8"></div>
